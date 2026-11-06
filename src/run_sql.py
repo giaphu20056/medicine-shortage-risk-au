@@ -1,5 +1,6 @@
-"""Run SQL files against data/project.db; optionally load processed CSVs.
+"""Run SQL files against data/project.db; optionally load processed CSVs or export out_* tables.
 Usage: python3 src/run_sql.py sql/01_schema.sql --load
+       python3 src/run_sql.py sql/02_join_shortage_usage.sql sql/03_windows.sql --export
 """
 import sqlite3
 import sys
@@ -29,14 +30,25 @@ def load_processed(con):
     con.commit()
 
 
+def export_outputs(con):
+    names = [r[0] for r in con.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name GLOB 'out_*' ORDER BY name")]
+    for t in names:
+        df = pd.read_sql_query(f"SELECT * FROM {t}", con)
+        df.to_csv(PROCESSED / f"{t}.csv", index=False)
+        print(f"exported {t}: {len(df)} rows")
+
+
 def main():
     args = sys.argv[1:]
-    files = [a for a in args if a != "--load"]
+    files = [a for a in args if not a.startswith("--")]
     with sqlite3.connect(DB) as con:
         for f in files:
             run_sql_file(con, f)
         if "--load" in args:
             load_processed(con)
+        if "--export" in args:
+            export_outputs(con)
 
 
 if __name__ == "__main__":
