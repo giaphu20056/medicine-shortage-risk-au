@@ -1,0 +1,743 @@
+ingredient_key,atc_group,atc_group_name,atc_letters,n_items,atc_status
+ABATACEPT,L,Antineoplastic and immunomodulating agents,L:18,18,single
+ABEMACICLIB,L,Antineoplastic and immunomodulating agents,L:6,6,single
+ABIRATERONE,L,Antineoplastic and immunomodulating agents,L:2,2,single
+ABIRATERONE + METHYLPREDNISOLONE,H,Systemic hormonal preparations,H:2,2,single
+ACALABRUTINIB,L,Antineoplastic and immunomodulating agents,L:9,9,single
+ACAMPROSATE,N,Nervous system,N:1,1,single
+ACARBOSE,A,Alimentary tract and metabolism,A:8,8,single
+ACETAZOLAMIDE,S,Sensory organs,S:9,9,single
+ACICLOVIR,J,Anti-infectives for systemic use,J:7|S:4,11,multi
+ACITRETIN,D,Dermatologicals,D:2,2,single
+ACLIDINIUM,R,Respiratory system,R:2,2,single
+ACLIDINIUM + FORMOTEROL,R,Respiratory system,R:2,2,single
+ADALIMUMAB,L,Antineoplastic and immunomodulating agents,L:343,343,single
+ADAPALENE + BENZOYL PEROXIDE,D,Dermatologicals,D:3,3,single
+ADRENALINE,C,Cardiovascular system,C:17|S:5,22,multi
+AFATINIB,L,Antineoplastic and immunomodulating agents,L:8,8,single
+AFLIBERCEPT,S,Sensory organs,S:32,32,single
+ALBENDAZOLE,P,Antiparasitic products,P:3,3,single
+ALECTINIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+ALENDRONATE,M,Musculo-skeletal system,M:5,5,single
+ALENDRONATE + COLECALCIFEROL,M,Musculo-skeletal system,M:6,6,single
+ALLOPURINOL,M,Musculo-skeletal system,M:7,7,single
+ALOGLIPTIN,A,Alimentary tract and metabolism,A:6,6,single
+ALOGLIPTIN + METFORMIN,A,Alimentary tract and metabolism,A:6,6,single
+ALPRAZOLAM,N,Nervous system,N:9,9,single
+AMANTADINE,N,Nervous system,N:2,2,single
+AMIFAMPRIDINE,N,Nervous system,N:1,1,single
+AMILORIDE + HYDROCHLOROTHIAZIDE,C,Cardiovascular system,C:2,2,single
+AMINO ACID FORMULA SUPPLEMENTED WITH PREBIOTICS PROBIOTICS AND LONG CHAIN POLYUNSATURATED FATTY ACIDS,UNK,Unclassified,,0,no_atc
+AMINO ACID FORMULA WITH FAT CARBOHYDRATE VITAMINS MINERALS TRACE ELEMENTS AND MEDIUM CHAIN TRIGLYCERIDES,UNK,Unclassified,,0,no_atc
+AMINO ACID FORMULA WITH VITAMINS AND MINERALS WITHOUT METHIONINE,UNK,Unclassified,,0,no_atc
+AMINO ACID FORMULA WITH VITAMINS AND MINERALS WITHOUT VALINE LEUCINE AND ISOLEUCINE,UNK,Unclassified,,0,no_atc
+AMINO ACID FORMULA WITH VITAMINS MINERALS AND LONG CHAIN POLYUNSATURATED FATTY ACIDS WITHOUT PHENYLALANINE,UNK,Unclassified,,0,no_atc
+AMINO ACID SYNTHETIC FORMULA,V,Various,V:12,12,single
+AMINO ACID SYNTHETIC FORMULA SUPPLEMENTED WITH LONG CHAIN POLYUNSATURATED FATTY ACIDS,UNK,Unclassified,,0,no_atc
+AMINO ACID SYNTHETIC FORMULA SUPPLEMENTED WITH LONG CHAIN POLYUNSATURATED FATTY ACIDS AND MEDIUM CHAIN TRIGLYCERIDES,UNK,Unclassified,,0,no_atc
+AMIODARONE,C,Cardiovascular system,C:2,2,single
+AMISULPRIDE,N,Nervous system,N:4,4,single
+AMITRIPTYLINE,N,Nervous system,N:3,3,single
+AMLODIPINE,C,Cardiovascular system,C:10,10,single
+AMLODIPINE + ATORVASTATIN,C,Cardiovascular system,C:16,16,single
+AMLODIPINE + HYDROCHLOROTHIAZIDE + OLMESARTAN,C,Cardiovascular system,C:10,10,single
+AMLODIPINE + HYDROCHLOROTHIAZIDE + VALSARTAN,C,Cardiovascular system,C:10,10,single
+AMLODIPINE + OLMESARTAN,C,Cardiovascular system,C:6,6,single
+AMLODIPINE + PERINDOPRIL,C,Cardiovascular system,C:8,8,single
+AMLODIPINE + TELMISARTAN,C,Cardiovascular system,C:8,8,single
+AMLODIPINE + VALSARTAN,C,Cardiovascular system,C:10,10,single
+AMOXICILLIN,J,Anti-infectives for systemic use,J:25,25,single
+AMOXICILLIN + CLARITHROMYCIN + ESOMEPRAZOLE,A,Alimentary tract and metabolism,A:2,2,single
+AMOXICILLIN + CLAVULANIC ACID,J,Anti-infectives for systemic use,J:21,21,single
+AMPHOTERICIN B,A,Alimentary tract and metabolism,A:3|D:2|J:1,6,multi
+ANASTROZOLE,L,Antineoplastic and immunomodulating agents,L:2,2,single
+APALUTAMIDE,L,Antineoplastic and immunomodulating agents,L:2,2,single
+APIXABAN,B,Blood and blood forming organs,B:8,8,single
+APOMORPHINE,N,Nervous system,N:32,32,single
+APREMILAST,L,Antineoplastic and immunomodulating agents,L:2,2,single
+APREPITANT,A,Alimentary tract and metabolism,A:4,4,single
+ARIPIPRAZOLE,N,Nervous system,N:10,10,single
+ARMODAFINIL,N,Nervous system,N:3,3,single
+ARTEMETHER + LUMEFANTRINE,P,Antiparasitic products,P:2,2,single
+ASCIMINIB,L,Antineoplastic and immunomodulating agents,L:5,5,single
+ASENAPINE,N,Nervous system,N:2,2,single
+ASPIRIN,N,Nervous system,N:9|B:7,16,multi
+ASPIRIN + CLOPIDOGREL,B,Blood and blood forming organs,B:2,2,single
+ATENOLOL,C,Cardiovascular system,C:4,4,single
+ATEZOLIZUMAB,L,Antineoplastic and immunomodulating agents,L:50,50,single
+ATOMOXETINE,N,Nervous system,N:7,7,single
+ATORVASTATIN,C,Cardiovascular system,C:12,12,single
+ATORVASTATIN + EZETIMIBE,C,Cardiovascular system,C:8,8,single
+ATOVAQUONE,P,Antiparasitic products,P:2,2,single
+ATOVAQUONE + PROGUANIL,P,Antiparasitic products,P:1,1,single
+ATROPINE,A,Alimentary tract and metabolism,A:5|S:3,8,multi
+ATROPINE + DIPHENOXYLATE,A,Alimentary tract and metabolism,A:1,1,single
+AURANOFIN,M,Musculo-skeletal system,M:3,3,single
+AVACOPAN,L,Antineoplastic and immunomodulating agents,L:1,1,single
+AXITINIB,L,Antineoplastic and immunomodulating agents,L:4,4,single
+AZACITIDINE,L,Antineoplastic and immunomodulating agents,L:17,17,single
+AZATHIOPRINE,L,Antineoplastic and immunomodulating agents,L:2,2,single
+AZITHROMYCIN,J,Anti-infectives for systemic use,J:10,10,single
+BACLOFEN,M,Musculo-skeletal system,M:13,13,single
+BALSALAZIDE,A,Alimentary tract and metabolism,A:3,3,single
+BARICITINIB,L,Antineoplastic and immunomodulating agents,L:8,8,single
+BECLOMETASONE,R,Respiratory system,R:24,24,single
+BECLOMETASONE + FORMOTEROL,R,Respiratory system,R:4,4,single
+BECLOMETASONE + FORMOTEROL + GLYCOPYRRONIUM,R,Respiratory system,R:6,6,single
+BELZUTIFAN,L,Antineoplastic and immunomodulating agents,L:1,1,single
+BENSERAZIDE + LEVODOPA,N,Nervous system,N:16,16,single
+BENZATHINE BENZYLPENICILLIN,J,Anti-infectives for systemic use,J:17,17,single
+BENZATROPINE,N,Nervous system,N:11,11,single
+BENZYDAMINE,A,Alimentary tract and metabolism,A:4|M:1,5,multi
+BENZYLPENICILLIN,J,Anti-infectives for systemic use,J:42,42,single
+BETAINE,A,Alimentary tract and metabolism,A:1,1,single
+BETAMETHASONE,D,Dermatologicals,D:31|H:2,33,multi
+BETAMETHASONE + CALCIPOTRIOL,D,Dermatologicals,D:10,10,single
+BETAXOLOL,S,Sensory organs,S:5,5,single
+BICALUTAMIDE,L,Antineoplastic and immunomodulating agents,L:1,1,single
+BICALUTAMIDE + GOSERELIN,L,Antineoplastic and immunomodulating agents,L:3,3,single
+BICALUTAMIDE + LEUPRORELIN,L,Antineoplastic and immunomodulating agents,L:3,3,single
+BICARBONATE,G,Genito-urinary system and sex hormones,G:3|B:1,4,multi
+BICARBONATE + CARBONATE + POTASSIUM CHLORIDE,A,Alimentary tract and metabolism,A:2,2,single
+BICARBONATE + CITRIC ACID + TARTARIC ACID,G,Genito-urinary system and sex hormones,G:5,5,single
+BICARBONATE + MACROGOL 3350 + POTASSIUM CHLORIDE + SODIUM CHLORIDE,A,Alimentary tract and metabolism,A:11,11,single
+BIMATOPROST,S,Sensory organs,S:6,6,single
+BIMATOPROST + TIMOLOL,S,Sensory organs,S:6,6,single
+BIMEKIZUMAB,L,Antineoplastic and immunomodulating agents,L:16,16,single
+BINIMETINIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+BISACODYL,A,Alimentary tract and metabolism,A:23,23,single
+BISOPROLOL,C,Cardiovascular system,C:6,6,single
+BREXPIPRAZOLE,N,Nervous system,N:5,5,single
+BRIGATINIB,L,Antineoplastic and immunomodulating agents,L:4,4,single
+BRIMONIDINE,S,Sensory organs,S:6,6,single
+BRIMONIDINE + BRINZOLAMIDE,S,Sensory organs,S:3,3,single
+BRIMONIDINE + TIMOLOL,S,Sensory organs,S:3,3,single
+BRINZOLAMIDE,S,Sensory organs,S:3,3,single
+BRINZOLAMIDE + TIMOLOL,S,Sensory organs,S:3,3,single
+BRIVARACETAM,N,Nervous system,N:10,10,single
+BROLUCIZUMAB,S,Sensory organs,S:1,1,single
+BROMOCRIPTINE,G,Genito-urinary system and sex hormones,G:5|N:1,6,multi
+BUDESONIDE,R,Respiratory system,R:18|A:8,26,multi
+BUDESONIDE + FORMOTEROL,R,Respiratory system,R:36,36,single
+BUDESONIDE + FORMOTEROL + GLYCOPYRRONIUM,R,Respiratory system,R:2,2,single
+BUPRENORPHINE,N,Nervous system,N:43,43,single
+BUPROPION,N,Nervous system,N:2,2,single
+BUSULFAN,L,Antineoplastic and immunomodulating agents,L:1,1,single
+CABERGOLINE,N,Nervous system,N:5|G:3,8,multi
+CABOZANTINIB,L,Antineoplastic and immunomodulating agents,L:18,18,single
+CALCITONIN SALMON,H,Systemic hormonal preparations,H:8,8,single
+CALCITRIOL,A,Alimentary tract and metabolism,A:2,2,single
+CALCIUM,A,Alimentary tract and metabolism,A:20,20,single
+CANDESARTAN,C,Cardiovascular system,C:11,11,single
+CANDESARTAN + HYDROCHLOROTHIAZIDE,C,Cardiovascular system,C:6,6,single
+CANNABIDIOL,N,Nervous system,N:2,2,single
+CAPECITABINE,L,Antineoplastic and immunomodulating agents,L:2,2,single
+CAPIVASERTIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+CAPTOPRIL,C,Cardiovascular system,C:4,4,single
+CARBAMAZEPINE,N,Nervous system,N:25,25,single
+CARBIDOPA + ENTACAPONE + LEVODOPA,N,Nervous system,N:12,12,single
+CARBIDOPA + LEVODOPA,N,Nervous system,N:16,16,single
+CARBIMAZOLE,H,Systemic hormonal preparations,H:2,2,single
+CARBOHYDRATE FAT VITAMINS MINERALS AND TRACE ELEMENTS,UNK,Unclassified,,0,no_atc
+CARBOHYDRATES FAT VITAMINS MINERALS TRACE ELEMENTS AND SUPPLEMENTED WITH ARACHIDONIC ACID AND DOCOSAHEXAENOIC ACID,UNK,Unclassified,,0,no_atc
+CARBOMER 974P,S,Sensory organs,S:2,2,single
+CARBOMER 980,S,Sensory organs,S:8,8,single
+CARBOMER 980 + HYPROMELLOSE,S,Sensory organs,S:3,3,single
+CARIPRAZINE,N,Nervous system,N:4,4,single
+CARMELLOSE,S,Sensory organs,S:20|A:6|D:3,29,multi
+CARMELLOSE + GLYCEROL,S,Sensory organs,S:5,5,single
+CARVEDILOL,C,Cardiovascular system,C:8,8,single
+CEDAZURIDINE + DECITABINE,L,Antineoplastic and immunomodulating agents,L:4,4,single
+CEFACLOR,J,Anti-infectives for systemic use,J:8,8,single
+CEFALEXIN,J,Anti-infectives for systemic use,J:14,14,single
+CEFAZOLIN,J,Anti-infectives for systemic use,J:14,14,single
+CEFEPIME,J,Anti-infectives for systemic use,J:21,21,single
+CEFTRIAXONE,J,Anti-infectives for systemic use,J:46,46,single
+CEFUROXIME,J,Anti-infectives for systemic use,J:10,10,single
+CELECOXIB,M,Musculo-skeletal system,M:4,4,single
+CERTOLIZUMAB PEGOL,L,Antineoplastic and immunomodulating agents,L:32,32,single
+CETALKONIUM + GLYCEROL + LIQUID PARAFFIN + POLOXAMER 188 + TROMETAMOL + TROMETAMOL HYDROCHLORIDE + TYLOXAPOL,S,Sensory organs,S:2,2,single
+CETIRIZINE,R,Respiratory system,R:1,1,single
+CHLORAMBUCIL,L,Antineoplastic and immunomodulating agents,L:2,2,single
+CHLORAMPHENICOL,J,Anti-infectives for systemic use,J:9|S:8,17,multi
+CHLORMETHINE,L,Antineoplastic and immunomodulating agents,L:1,1,single
+CHLORPROMAZINE,N,Nervous system,N:6,6,single
+CHLORTALIDONE,C,Cardiovascular system,C:2,2,single
+CHORIOGONADOTROPIN ALFA,G,Genito-urinary system and sex hormones,G:6,6,single
+CICLESONIDE,R,Respiratory system,R:4,4,single
+CICLOSPORIN,L,Antineoplastic and immunomodulating agents,L:30|S:3,33,multi
+CINACALCET,H,Systemic hormonal preparations,H:15,15,single
+CIPROFLOXACIN,J,Anti-infectives for systemic use,J:4|S:4,8,multi
+CITALOPRAM,N,Nervous system,N:6,6,single
+CITRIC ACID + GLUCOSE + POTASSIUM CHLORIDE + SODIUM CHLORIDE,A,Alimentary tract and metabolism,A:3,3,single
+CITRIC ACID + LAURYL SULFOACETATE + SORBITOL,A,Alimentary tract and metabolism,A:8,8,single
+CITRULLINE,V,Various,V:1,1,single
+CITRULLINE WITH CARBOHYDRATE,UNK,Unclassified,,0,no_atc
+CLADRIBINE,L,Antineoplastic and immunomodulating agents,L:9,9,single
+CLARITHROMYCIN,J,Anti-infectives for systemic use,J:6,6,single
+CLINDAMYCIN,J,Anti-infectives for systemic use,J:5,5,single
+CLOBETASOL,D,Dermatologicals,D:3,3,single
+CLOMIFENE,G,Genito-urinary system and sex hormones,G:1,1,single
+CLOMIPRAMINE,N,Nervous system,N:1,1,single
+CLONAZEPAM,N,Nervous system,N:16,16,single
+CLONIDINE,C,Cardiovascular system,C:4,4,single
+CLOPIDOGREL,B,Blood and blood forming organs,B:15,15,single
+CLOTRIMAZOLE,G,Genito-urinary system and sex hormones,G:8|D:4,12,multi
+COBIMETINIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+CODEINE,N,Nervous system,N:4|R:3,7,multi
+CODEINE + PARACETAMOL,N,Nervous system,N:9,9,single
+COLCHICINE,M,Musculo-skeletal system,M:2,2,single
+COLESTYRAMINE,C,Cardiovascular system,C:8,8,single
+CORTISONE,H,Systemic hormonal preparations,H:4,4,single
+CRIZOTINIB,L,Antineoplastic and immunomodulating agents,L:4,4,single
+CYCLOPHOSPHAMIDE,L,Antineoplastic and immunomodulating agents,L:46,46,single
+CYPROTERONE,L,Antineoplastic and immunomodulating agents,L:4|G:2,6,multi
+DABIGATRAN,B,Blood and blood forming organs,B:10,10,single
+DABRAFENIB,L,Antineoplastic and immunomodulating agents,L:17,17,single
+DANTROLENE,M,Musculo-skeletal system,M:2,2,single
+DAPAGLIFLOZIN,A,Alimentary tract and metabolism,A:9,9,single
+DAPAGLIFLOZIN + METFORMIN,A,Alimentary tract and metabolism,A:9,9,single
+DAPSONE,D,Dermatologicals,D:4,4,single
+DARATUMUMAB,L,Antineoplastic and immunomodulating agents,L:32,32,single
+DAROLUTAMIDE,L,Antineoplastic and immunomodulating agents,L:2,2,single
+DASATINIB,L,Antineoplastic and immunomodulating agents,L:32,32,single
+DEGARELIX,L,Antineoplastic and immunomodulating agents,L:4,4,single
+DENOSUMAB,M,Musculo-skeletal system,M:5,5,single
+DESMOPRESSIN,H,Systemic hormonal preparations,H:25,25,single
+DESVENLAFAXINE,N,Nervous system,N:12,12,single
+DEUCRAVACITINIB,L,Antineoplastic and immunomodulating agents,L:1,1,single
+DEXAMETHASONE,S,Sensory organs,S:7|H:4,11,multi
+DEXAMETHASONE + FRAMYCETIN + GRAMICIDIN,S,Sensory organs,S:2,2,single
+DEXAMFETAMINE,N,Nervous system,N:1,1,single
+DEXTRAN 70 + HYPROMELLOSE,S,Sensory organs,S:6,6,single
+DIAZEPAM,N,Nervous system,N:14,14,single
+DICLOFENAC,M,Musculo-skeletal system,M:18|S:2|D:1,21,multi
+DICLOXACILLIN,J,Anti-infectives for systemic use,J:33,33,single
+DIENOGEST,G,Genito-urinary system and sex hormones,G:1,1,single
+DIGOXIN,C,Cardiovascular system,C:5,5,single
+DILTIAZEM,C,Cardiovascular system,C:10,10,single
+DIMETHYL,L,Antineoplastic and immunomodulating agents,L:3,3,single
+DIPHTHERIA + TETANUS VACCINE,J,Anti-infectives for systemic use,J:8,8,single
+DIROXIMEL,L,Antineoplastic and immunomodulating agents,L:1,1,single
+DISOPYRAMIDE,C,Cardiovascular system,C:8,8,single
+DOCUSATE,A,Alimentary tract and metabolism,A:2|S:1,3,multi
+DOCUSATE + SENNOSIDE B,A,Alimentary tract and metabolism,A:2,2,single
+DOMPERIDONE,A,Alimentary tract and metabolism,A:1,1,single
+DONEPEZIL,N,Nervous system,N:6,6,single
+DORZOLAMIDE,S,Sensory organs,S:4,4,single
+DORZOLAMIDE + TIMOLOL,S,Sensory organs,S:3,3,single
+DOSULEPIN,N,Nervous system,N:2,2,single
+DOXYCYCLINE,J,Anti-infectives for systemic use,J:36,36,single
+DROSPIRENONE,G,Genito-urinary system and sex hormones,G:3,3,single
+DROSPIRENONE + ESTETROL,G,Genito-urinary system and sex hormones,G:1,1,single
+DROSPIRENONE + ETHINYLESTRADIOL,G,Genito-urinary system and sex hormones,G:6,6,single
+DRY PSYLLIUM HUSK,A,Alimentary tract and metabolism,A:1,1,single
+DULAGLUTIDE,A,Alimentary tract and metabolism,A:2,2,single
+DULOXETINE,N,Nervous system,N:3,3,single
+DUPILUMAB,R,Respiratory system,R:32|D:4,36,multi
+DUTASTERIDE,G,Genito-urinary system and sex hormones,G:4,4,single
+DUTASTERIDE + TAMSULOSIN,G,Genito-urinary system and sex hormones,G:4,4,single
+DYDROGESTERONE + ESTRADIOL,G,Genito-urinary system and sex hormones,G:4,4,single
+ELAFIBRANOR,A,Alimentary tract and metabolism,A:3,3,single
+ELETRIPTAN,N,Nervous system,N:2,2,single
+ELRANATAMAB,L,Antineoplastic and immunomodulating agents,L:4,4,single
+EMPAGLIFLOZIN,A,Alimentary tract and metabolism,A:12,12,single
+EMPAGLIFLOZIN + LINAGLIPTIN,A,Alimentary tract and metabolism,A:6,6,single
+EMPAGLIFLOZIN + METFORMIN,A,Alimentary tract and metabolism,A:12,12,single
+EMTRICITABINE + TENOFOVIR DISOPROXIL,J,Anti-infectives for systemic use,J:17,17,single
+ENALAPRIL,C,Cardiovascular system,C:21,21,single
+ENALAPRIL + HYDROCHLOROTHIAZIDE,C,Cardiovascular system,C:2,2,single
+ENCORAFENIB,L,Antineoplastic and immunomodulating agents,L:6,6,single
+ENOXAPARIN,B,Blood and blood forming organs,B:30,30,single
+ENTACAPONE,N,Nervous system,N:2,2,single
+ENTRECTINIB,L,Antineoplastic and immunomodulating agents,L:1,1,single
+ENZALUTAMIDE,L,Antineoplastic and immunomodulating agents,L:3,3,single
+EPCORITAMAB,L,Antineoplastic and immunomodulating agents,L:6,6,single
+EPLERENONE,C,Cardiovascular system,C:4,4,single
+EPTINEZUMAB,N,Nervous system,N:2,2,single
+ERLOTINIB,L,Antineoplastic and immunomodulating agents,L:12,12,single
+ERYTHROMYCIN,J,Anti-infectives for systemic use,J:34,34,single
+ESCITALOPRAM,N,Nervous system,N:16,16,single
+ESKETAMINE,N,Nervous system,N:18,18,single
+ESOMEPRAZOLE,A,Alimentary tract and metabolism,A:26,26,single
+ESSENTIAL AMINO ACIDS FORMULA,V,Various,V:1,1,single
+ESTRADIOL,G,Genito-urinary system and sex hormones,G:49,49,single
+ESTRADIOL + NORETHISTERONE,G,Genito-urinary system and sex hormones,G:17,17,single
+ESTRADIOL + NORETHISTERONE + RELUGOLIX,H,Systemic hormonal preparations,H:1,1,single
+ESTRADIOL + PROGESTERONE,G,Genito-urinary system and sex hormones,G:2,2,single
+ESTRIOL,G,Genito-urinary system and sex hormones,G:5,5,single
+ETANERCEPT,L,Antineoplastic and immunomodulating agents,L:117,117,single
+ETHINYLESTRADIOL + LEVONORGESTREL,G,Genito-urinary system and sex hormones,G:11,11,single
+ETHINYLESTRADIOL + NORETHISTERONE,G,Genito-urinary system and sex hormones,G:7,7,single
+ETHOSUXIMIDE,N,Nervous system,N:5,5,single
+ETONOGESTREL,G,Genito-urinary system and sex hormones,G:1,1,single
+ETOPOSIDE,L,Antineoplastic and immunomodulating agents,L:10,10,single
+ETRASIMOD,L,Antineoplastic and immunomodulating agents,L:2,2,single
+EVEROLIMUS,L,Antineoplastic and immunomodulating agents,L:34,34,single
+EVOLOCUMAB,C,Cardiovascular system,C:8,8,single
+EXEMESTANE,L,Antineoplastic and immunomodulating agents,L:4,4,single
+EZETIMIBE,C,Cardiovascular system,C:5,5,single
+EZETIMIBE + ROSUVASTATIN,C,Cardiovascular system,C:8,8,single
+EZETIMIBE + SIMVASTATIN,C,Cardiovascular system,C:8,8,single
+FAMCICLOVIR,J,Anti-infectives for systemic use,J:6,6,single
+FAMOTIDINE,A,Alimentary tract and metabolism,A:17,17,single
+FARICIMAB,S,Sensory organs,S:12,12,single
+FEBUXOSTAT,M,Musculo-skeletal system,M:2,2,single
+FELODIPINE,C,Cardiovascular system,C:7,7,single
+FENOFIBRATE,C,Cardiovascular system,C:8,8,single
+FENTANYL,N,Nervous system,N:79,79,single
+FERRIC CARBOXYMALTOSE,B,Blood and blood forming organs,B:2,2,single
+FERRIC DERISOMALTOSE,B,Blood and blood forming organs,B:2,2,single
+FERROUS,B,Blood and blood forming organs,B:5,5,single
+FERROUS + FOLIC ACID,B,Blood and blood forming organs,B:2,2,single
+FINASTERIDE,G,Genito-urinary system and sex hormones,G:4,4,single
+FINERENONE,C,Cardiovascular system,C:2,2,single
+FINGOLIMOD,L,Antineoplastic and immunomodulating agents,L:2,2,single
+FLECAINIDE,C,Cardiovascular system,C:2,2,single
+FLUCLOXACILLIN,J,Anti-infectives for systemic use,J:55,55,single
+FLUCONAZOLE,J,Anti-infectives for systemic use,J:12,12,single
+FLUDARABINE,L,Antineoplastic and immunomodulating agents,L:9,9,single
+FLUDROCORTISONE,H,Systemic hormonal preparations,H:1,1,single
+FLUOROMETHOLONE,S,Sensory organs,S:2,2,single
+FLUOROURACIL,L,Antineoplastic and immunomodulating agents,L:21,21,single
+FLUOXETINE,N,Nervous system,N:7,7,single
+FLUPENTIXOL DECANOATE,N,Nervous system,N:3,3,single
+FLUTICASONE,R,Respiratory system,R:18,18,single
+FLUTICASONE + FORMOTEROL,R,Respiratory system,R:6,6,single
+FLUTICASONE + SALMETEROL,R,Respiratory system,R:12,12,single
+FLUTICASONE + UMECLIDINIUM + VILANTEROL,R,Respiratory system,R:4,4,single
+FLUTICASONE + VILANTEROL,R,Respiratory system,R:4,4,single
+FLUVASTATIN,C,Cardiovascular system,C:7,7,single
+FLUVOXAMINE,N,Nervous system,N:4,4,single
+FOLIC ACID,B,Blood and blood forming organs,B:5,5,single
+FOLINIC ACID,V,Various,V:18,18,single
+FOLLITROPIN ALFA,G,Genito-urinary system and sex hormones,G:40,40,single
+FONDAPARINUX,B,Blood and blood forming organs,B:2,2,single
+FORMOTEROL,R,Respiratory system,R:6,6,single
+FOSAPREPITANT,A,Alimentary tract and metabolism,A:2,2,single
+FOSCARBIDOPA + FOSLEVODOPA,N,Nervous system,N:8,8,single
+FOSINOPRIL,C,Cardiovascular system,C:6,6,single
+FOSNETUPITANT + PALONOSETRON,A,Alimentary tract and metabolism,A:2,2,single
+FRAMYCETIN,S,Sensory organs,S:3,3,single
+FREMANEZUMAB,N,Nervous system,N:4,4,single
+FULVESTRANT,L,Antineoplastic and immunomodulating agents,L:1,1,single
+FUROSEMIDE,C,Cardiovascular system,C:13,13,single
+FUSIDATE,J,Anti-infectives for systemic use,J:4,4,single
+GABAPENTIN,N,Nervous system,N:10,10,single
+GALANTAMINE,N,Nervous system,N:12,12,single
+GALCANEZUMAB,N,Nervous system,N:2,2,single
+GARADACIMAB,B,Blood and blood forming organs,B:4,4,single
+GEFITINIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+GEMFIBROZIL,C,Cardiovascular system,C:3,3,single
+GENTAMICIN,J,Anti-infectives for systemic use,J:3|S:2,5,multi
+GILTERITINIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+GIVOSIRAN,A,Alimentary tract and metabolism,A:1,1,single
+GLATIRAMER,L,Antineoplastic and immunomodulating agents,L:4,4,single
+GLECAPREVIR + PIBRENTASVIR,J,Anti-infectives for systemic use,J:9,9,single
+GLIBENCLAMIDE,A,Alimentary tract and metabolism,A:3,3,single
+GLICLAZIDE,A,Alimentary tract and metabolism,A:6,6,single
+GLIMEPIRIDE,A,Alimentary tract and metabolism,A:8,8,single
+GLIPIZIDE,A,Alimentary tract and metabolism,A:2,2,single
+GLUCAGON,H,Systemic hormonal preparations,H:9,9,single
+GLUCOSE AND KETONE INDICATOR URINE,UNK,Unclassified,,0,no_atc
+GLYCEROL,A,Alimentary tract and metabolism,A:16|D:1,17,multi
+GLYCERYL TRINITRATE,C,Cardiovascular system,C:28,28,single
+GLYCINE WITH CARBOHYDRATE,UNK,Unclassified,,0,no_atc
+GLYCOPYRRONIUM,R,Respiratory system,R:2|D:1,3,multi
+GLYCOPYRRONIUM + INDACATEROL,R,Respiratory system,R:2,2,single
+GLYCOPYRRONIUM + INDACATEROL + MOMETASONE,R,Respiratory system,R:4,4,single
+GOLIMUMAB,L,Antineoplastic and immunomodulating agents,L:29,29,single
+GOSERELIN,L,Antineoplastic and immunomodulating agents,L:2,2,single
+GRAMICIDIN + NEOMYCIN + NYSTATIN + TRIAMCINOLONE,S,Sensory organs,S:3|D:2,5,multi
+GRANISETRON,A,Alimentary tract and metabolism,A:9,9,single
+GRISEOFULVIN,D,Dermatologicals,D:3,3,single
+GUANFACINE,N,Nervous system,N:4,4,single
+GUSELKUMAB,L,Antineoplastic and immunomodulating agents,L:3,3,single
+HALOPERIDOL,N,Nervous system,N:9,9,single
+HALOPERIDOL DECANOATE,N,Nervous system,N:2,2,single
+HEPARIN,B,Blood and blood forming organs,B:6,6,single
+HIGH FAT FORMULA WITH VITAMINS MINERALS AND TRACE ELEMENTS AND LOW IN PROTEIN AND CARBOHYDRATE,UNK,Unclassified,,0,no_atc
+HONEY BEE VENOM,V,Various,V:2,2,single
+HUMAN CHORIONIC GONADOTROPHIN,G,Genito-urinary system and sex hormones,G:20,20,single
+HYALURONATE,S,Sensory organs,S:6,6,single
+HYDROCHLOROTHIAZIDE,C,Cardiovascular system,C:3,3,single
+HYDROCHLOROTHIAZIDE + IRBESARTAN,C,Cardiovascular system,C:6,6,single
+HYDROCHLOROTHIAZIDE + OLMESARTAN,C,Cardiovascular system,C:6,6,single
+HYDROCHLOROTHIAZIDE + TELMISARTAN,C,Cardiovascular system,C:6,6,single
+HYDROCHLOROTHIAZIDE + VALSARTAN,C,Cardiovascular system,C:10,10,single
+HYDROCORTISONE,H,Systemic hormonal preparations,H:15|D:11|S:7|A:1,34,multi
+HYDROMORPHONE,N,Nervous system,N:53,53,single
+HYDROXOCOBALAMIN,B,Blood and blood forming organs,B:6,6,single
+HYDROXYCARBAMIDE,L,Antineoplastic and immunomodulating agents,L:1,1,single
+HYDROXYCHLOROQUINE,M,Musculo-skeletal system,M:2,2,single
+HYOSCINE BUTYLBROMIDE,A,Alimentary tract and metabolism,A:4,4,single
+HYPROMELLOSE,S,Sensory organs,S:15|A:2,17,multi
+IBANDRONATE,M,Musculo-skeletal system,M:3,3,single
+IBRUTINIB,L,Antineoplastic and immunomodulating agents,L:19,19,single
+IBUPROFEN,M,Musculo-skeletal system,M:12,12,single
+ICATIBANT,B,Blood and blood forming organs,B:1,1,single
+ICOSAPENT,C,Cardiovascular system,C:1,1,single
+IDELALISIB,L,Antineoplastic and immunomodulating agents,L:6,6,single
+IMATINIB,L,Antineoplastic and immunomodulating agents,L:100,100,single
+IMIPRAMINE,N,Nervous system,N:5,5,single
+IMIQUIMOD,D,Dermatologicals,D:5,5,single
+INCLISIRAN,C,Cardiovascular system,C:3,3,single
+INDACATEROL,R,Respiratory system,R:4,4,single
+INDACATEROL + MOMETASONE,R,Respiratory system,R:6,6,single
+INDAPAMIDE,C,Cardiovascular system,C:4,4,single
+INDAPAMIDE + PERINDOPRIL,C,Cardiovascular system,C:6,6,single
+INDOMETACIN,M,Musculo-skeletal system,M:10|S:1,11,multi
+INFLIXIMAB,L,Antineoplastic and immunomodulating agents,L:108,108,single
+INSULIN ASPART,A,Alimentary tract and metabolism,A:6,6,single
+INSULIN ASPART + INSULIN ASPART PROTAMINE,A,Alimentary tract and metabolism,A:2,2,single
+INSULIN ASPART + INSULIN DEGLUDEC,A,Alimentary tract and metabolism,A:2,2,single
+INSULIN DETEMIR,A,Alimentary tract and metabolism,A:2,2,single
+INSULIN GLARGINE,A,Alimentary tract and metabolism,A:4,4,single
+INSULIN GLULISINE,A,Alimentary tract and metabolism,A:3,3,single
+INSULIN ISOPHANE HUMAN,A,Alimentary tract and metabolism,A:5,5,single
+INSULIN ISOPHANE HUMAN + INSULIN NEUTRAL HUMAN,A,Alimentary tract and metabolism,A:14,14,single
+INSULIN LISPRO,A,Alimentary tract and metabolism,A:5,5,single
+INSULIN LISPRO + INSULIN LISPRO PROTAMINE,A,Alimentary tract and metabolism,A:4,4,single
+INSULIN NEUTRAL HUMAN,A,Alimentary tract and metabolism,A:4,4,single
+IPRATROPIUM,R,Respiratory system,R:13,13,single
+IRBESARTAN,C,Cardiovascular system,C:6,6,single
+IRON POLYMALTOSE,B,Blood and blood forming organs,B:3,3,single
+IRON SUCROSE,B,Blood and blood forming organs,B:2,2,single
+ISONIAZID,J,Anti-infectives for systemic use,J:1,1,single
+ISOSORBIDE DINITRATE,C,Cardiovascular system,C:4,4,single
+ISOSORBIDE MONONITRATE,C,Cardiovascular system,C:4,4,single
+ISOTRETINOIN,D,Dermatologicals,D:6,6,single
+ITRACONAZOLE,J,Anti-infectives for systemic use,J:2,2,single
+IVABRADINE,C,Cardiovascular system,C:4,4,single
+IVERMECTIN,P,Antiparasitic products,P:3,3,single
+IVOSIDENIB,L,Antineoplastic and immunomodulating agents,L:1,1,single
+IXEKIZUMAB,L,Antineoplastic and immunomodulating agents,L:5,5,single
+KETOPROFEN,M,Musculo-skeletal system,M:13,13,single
+LABETALOL,C,Cardiovascular system,C:3,3,single
+LACOSAMIDE,N,Nervous system,N:26,26,single
+LAMOTRIGINE,N,Nervous system,N:20,20,single
+LANADELUMAB,B,Blood and blood forming organs,B:1,1,single
+LANSOPRAZOLE,A,Alimentary tract and metabolism,A:27,27,single
+LANTHANUM,V,Various,V:12,12,single
+LAPATINIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+LAROTRECTINIB,L,Antineoplastic and immunomodulating agents,L:14,14,single
+LATANOPROST,S,Sensory organs,S:3,3,single
+LATANOPROST + TIMOLOL,S,Sensory organs,S:4,4,single
+LEFLUNOMIDE,L,Antineoplastic and immunomodulating agents,L:11,11,single
+LENVATINIB,L,Antineoplastic and immunomodulating agents,L:7,7,single
+LERCANIDIPINE,C,Cardiovascular system,C:8,8,single
+LETROZOLE,L,Antineoplastic and immunomodulating agents,L:2,2,single
+LEUPRORELIN,L,Antineoplastic and immunomodulating agents,L:18,18,single
+LEVETIRACETAM,N,Nervous system,N:14,14,single
+LEVONORGESTREL,G,Genito-urinary system and sex hormones,G:4,4,single
+LEVOTHYROXINE,H,Systemic hormonal preparations,H:9,9,single
+LIDOCAINE,C,Cardiovascular system,C:4|D:1|N:1,6,multi
+LINAGLIPTIN,A,Alimentary tract and metabolism,A:3,3,single
+LINAGLIPTIN + METFORMIN,A,Alimentary tract and metabolism,A:9,9,single
+LIOTHYRONINE,H,Systemic hormonal preparations,H:3,3,single
+LISDEXAMFETAMINE,N,Nervous system,N:6,6,single
+LISINOPRIL,C,Cardiovascular system,C:12,12,single
+LITHIUM CARBONATE,N,Nervous system,N:3,3,single
+LOPERAMIDE,A,Alimentary tract and metabolism,A:4,4,single
+LORATADINE,R,Respiratory system,R:1,1,single
+LORLATINIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+LUMASIRAN,A,Alimentary tract and metabolism,A:2,2,single
+LURASIDONE,N,Nervous system,N:2,2,single
+MACROGOL 3350,A,Alimentary tract and metabolism,A:8,8,single
+MAGNESIUM,A,Alimentary tract and metabolism,A:3,3,single
+MAVACAMTEN,C,Cardiovascular system,C:8,8,single
+MEBEVERINE,A,Alimentary tract and metabolism,A:1,1,single
+MEDIUM CHAIN TRIGLYCERIDES,V,Various,V:6,6,single
+MEDROXYPROGESTERONE,G,Genito-urinary system and sex hormones,G:10|L:10,20,multi
+MEFENAMIC ACID,M,Musculo-skeletal system,M:1,1,single
+MELATONIN,N,Nervous system,N:2,2,single
+MELOXICAM,M,Musculo-skeletal system,M:4,4,single
+MELPHALAN,L,Antineoplastic and immunomodulating agents,L:2,2,single
+MEMANTINE,N,Nervous system,N:7,7,single
+MERCAPTOPURINE,L,Antineoplastic and immunomodulating agents,L:2,2,single
+MESALAZINE,A,Alimentary tract and metabolism,A:46,46,single
+MESNA,V,Various,V:4,4,single
+METFORMIN,A,Alimentary tract and metabolism,A:12,12,single
+METFORMIN + SAXAGLIPTIN,A,Alimentary tract and metabolism,A:9,9,single
+METFORMIN + SITAGLIPTIN,A,Alimentary tract and metabolism,A:15,15,single
+METFORMIN + VILDAGLIPTIN,A,Alimentary tract and metabolism,A:6,6,single
+METHADONE,N,Nervous system,N:17,17,single
+METHENAMINE HIPPURATE,J,Anti-infectives for systemic use,J:2,2,single
+METHOTREXATE,L,Antineoplastic and immunomodulating agents,L:37,37,single
+METHYLDOPA,C,Cardiovascular system,C:2,2,single
+METHYLNALTREXONE,A,Alimentary tract and metabolism,A:3,3,single
+METHYLPHENIDATE,N,Nervous system,N:28,28,single
+METHYLPREDNISOLONE,D,Dermatologicals,D:23|H:8,31,multi
+METOCLOPRAMIDE,A,Alimentary tract and metabolism,A:9,9,single
+METOPROLOL,C,Cardiovascular system,C:12,12,single
+METRONIDAZOLE,J,Anti-infectives for systemic use,J:18|D:4,22,multi
+MIANSERIN,N,Nervous system,N:4,4,single
+MICONAZOLE,D,Dermatologicals,D:14|G:5|A:1,20,multi
+MIDAZOLAM,N,Nervous system,N:9,9,single
+MIFEPRISTONE + MISOPROSTOL,G,Genito-urinary system and sex hormones,G:1,1,single
+MIGALASTAT,A,Alimentary tract and metabolism,A:1,1,single
+MILK POWDER SYNTHETIC LOW,V,Various,V:1,1,single
+MILK PROTEIN AND FAT FORMULA WITH VITAMINS AND MINERALS CARBOHYDRATE FREE,UNK,Unclassified,,0,no_atc
+MINOCYCLINE,J,Anti-infectives for systemic use,J:3,3,single
+MINOXIDIL,C,Cardiovascular system,C:4,4,single
+MIRTAZAPINE,N,Nervous system,N:12,12,single
+MOCLOBEMIDE,N,Nervous system,N:4,4,single
+MODAFINIL,N,Nervous system,N:1,1,single
+MODIFIED LONG CHAIN AMYLOPECTIN,V,Various,V:1,1,single
+MOLNUPIRAVIR,J,Anti-infectives for systemic use,J:2,2,single
+MOMELOTINIB,L,Antineoplastic and immunomodulating agents,L:6,6,single
+MOMETASONE,D,Dermatologicals,D:19,19,single
+MONTELUKAST,R,Respiratory system,R:4,4,single
+MORPHINE,N,Nervous system,N:141,141,single
+MOXONIDINE,C,Cardiovascular system,C:4,4,single
+MUPIROCIN,D,Dermatologicals,D:2|R:2,4,multi
+MYCOBACTERIUM BOVIS BCG DANISH STRAIN,L,Antineoplastic and immunomodulating agents,L:2,2,single
+MYCOBACTERIUM BOVIS BCG TICE STRAIN,L,Antineoplastic and immunomodulating agents,L:2,2,single
+MYCOPHENOLATE,L,Antineoplastic and immunomodulating agents,L:26,26,single
+NAFARELIN,H,Systemic hormonal preparations,H:2,2,single
+NALOXONE,V,Various,V:22,22,single
+NALOXONE + OXYCODONE,N,Nervous system,N:18,18,single
+NALTREXONE,N,Nervous system,N:1,1,single
+NAPROXEN,M,Musculo-skeletal system,M:42,42,single
+NARATRIPTAN,N,Nervous system,N:3,3,single
+NEBIVOLOL,C,Cardiovascular system,C:7,7,single
+NETUPITANT + PALONOSETRON,A,Alimentary tract and metabolism,A:2,2,single
+NICORANDIL,C,Cardiovascular system,C:4,4,single
+NICOTINE,N,Nervous system,N:19,19,single
+NIFEDIPINE,C,Cardiovascular system,C:15,15,single
+NILOTINIB,L,Antineoplastic and immunomodulating agents,L:8,8,single
+NINTEDANIB,L,Antineoplastic and immunomodulating agents,L:4,4,single
+NIRAPARIB,L,Antineoplastic and immunomodulating agents,L:16,16,single
+NIRMATRELVIR + RITONAVIR,J,Anti-infectives for systemic use,J:2,2,single
+NITRAZEPAM,N,Nervous system,N:5,5,single
+NITROFURANTOIN,J,Anti-infectives for systemic use,J:4,4,single
+NIZATIDINE,A,Alimentary tract and metabolism,A:14,14,single
+NORETHISTERONE,G,Genito-urinary system and sex hormones,G:3|L:1,4,multi
+NORFLOXACIN,J,Anti-infectives for systemic use,J:1,1,single
+NORTRIPTYLINE,N,Nervous system,N:3,3,single
+NYSTATIN,A,Alimentary tract and metabolism,A:9|D:7|G:7,23,multi
+OBETICHOLIC ACID,A,Alimentary tract and metabolism,A:5,5,single
+ODEVIXIBAT,A,Alimentary tract and metabolism,A:24,24,single
+OFATUMUMAB,L,Antineoplastic and immunomodulating agents,L:8,8,single
+OFLOXACIN,S,Sensory organs,S:3,3,single
+OLANZAPINE,N,Nervous system,N:19,19,single
+OLAPARIB,L,Antineoplastic and immunomodulating agents,L:24,24,single
+OLMESARTAN,C,Cardiovascular system,C:6,6,single
+OLODATEROL + TIOTROPIUM,R,Respiratory system,R:3,3,single
+OMEPRAZOLE,A,Alimentary tract and metabolism,A:36,36,single
+ONDANSETRON,A,Alimentary tract and metabolism,A:27,27,single
+OPICAPONE,N,Nervous system,N:2,2,single
+OSILODROSTAT,H,Systemic hormonal preparations,H:4,4,single
+OSIMERTINIB,L,Antineoplastic and immunomodulating agents,L:8,8,single
+OXAZEPAM,N,Nervous system,N:10,10,single
+OXCARBAZEPINE,N,Nervous system,N:8,8,single
+OXYBUTYNIN,G,Genito-urinary system and sex hormones,G:6,6,single
+OXYCODONE,N,Nervous system,N:47,47,single
+PALBOCICLIB,L,Antineoplastic and immunomodulating agents,L:6,6,single
+PALIPERIDONE,N,Nervous system,N:15,15,single
+PALONOSETRON,A,Alimentary tract and metabolism,A:2,2,single
+PAMIDRONATE,M,Musculo-skeletal system,M:19,19,single
+PANCREATIC EXTRACT,A,Alimentary tract and metabolism,A:16,16,single
+PANTOPRAZOLE,A,Alimentary tract and metabolism,A:16,16,single
+PAPER WASP VENOM,V,Various,V:2,2,single
+PARACETAMOL,N,Nervous system,N:20,20,single
+PARAFFIN,S,Sensory organs,S:8|D:6,14,multi
+PAROXETINE,N,Nervous system,N:3,3,single
+PATIROMER,V,Various,V:4,4,single
+PAZOPANIB,L,Antineoplastic and immunomodulating agents,L:14,14,single
+PEGINTERFERON ALFA 2A,L,Antineoplastic and immunomodulating agents,L:16,16,single
+PEGINTERFERON BETA 1A,L,Antineoplastic and immunomodulating agents,L:3,3,single
+PENICILLAMINE,M,Musculo-skeletal system,M:4,4,single
+PERAMPANEL,N,Nervous system,N:22,22,single
+PERHEXILINE,C,Cardiovascular system,C:2,2,single
+PERICIAZINE,N,Nervous system,N:4,4,single
+PERINDOPRIL,C,Cardiovascular system,C:16,16,single
+PERMETHRIN,P,Antiparasitic products,P:2,2,single
+PHENOBARBITAL,N,Nervous system,N:4,4,single
+PHENOXYBENZAMINE,C,Cardiovascular system,C:3,3,single
+PHENOXYMETHYLPENICILLIN,J,Anti-infectives for systemic use,J:27,27,single
+PHENYLBUTYRATE,A,Alimentary tract and metabolism,A:1,1,single
+PHENYLEPHRINE + PREDNISOLONE,S,Sensory organs,S:3,3,single
+PHENYTOIN,N,Nervous system,N:8,8,single
+PHOSPHORUS,V,Various,V:2,2,single
+PILOCARPINE,S,Sensory organs,S:15,15,single
+PIMECROLIMUS,D,Dermatologicals,D:1,1,single
+PIOGLITAZONE,A,Alimentary tract and metabolism,A:15,15,single
+PIRFENIDONE,L,Antineoplastic and immunomodulating agents,L:3,3,single
+PIROXICAM,M,Musculo-skeletal system,M:8,8,single
+PIZOTIFEN,N,Nervous system,N:2,2,single
+POLYETHYLENE GLYCOL 400 + PROPYLENE GLYCOL,S,Sensory organs,S:12,12,single
+POLYSTYRENE SULFONATE,V,Various,V:1,1,single
+PONATINIB,L,Antineoplastic and immunomodulating agents,L:6,6,single
+POSACONAZOLE,J,Anti-infectives for systemic use,J:2,2,single
+POTASSIUM CHLORIDE,A,Alimentary tract and metabolism,A:4,4,single
+PRAMIPEXOLE,N,Nervous system,N:21,21,single
+PRASUGREL,B,Blood and blood forming organs,B:4,4,single
+PRAVASTATIN,C,Cardiovascular system,C:13,13,single
+PRAZIQUANTEL,P,Antiparasitic products,P:3,3,single
+PRAZOSIN,C,Cardiovascular system,C:10,10,single
+PREDNISOLONE,H,Systemic hormonal preparations,H:8|A:2|S:2,12,multi
+PREDNISONE,H,Systemic hormonal preparations,H:5,5,single
+PREGABALIN,N,Nervous system,N:8,8,single
+PRIMIDONE,N,Nervous system,N:2,2,single
+PROBENECID,M,Musculo-skeletal system,M:2,2,single
+PROCHLORPERAZINE,A,Alimentary tract and metabolism,A:11|N:7,18,multi
+PROGESTERONE,G,Genito-urinary system and sex hormones,G:9,9,single
+PROMETHAZINE,A,Alimentary tract and metabolism,A:9|R:4,13,multi
+PROPANTHELINE,G,Genito-urinary system and sex hormones,G:2,2,single
+PROPRANOLOL,C,Cardiovascular system,C:6,6,single
+PROPYLTHIOURACIL,H,Systemic hormonal preparations,H:2,2,single
+PROTEIN FORMULA WITH CARBOHYDRATE FAT VITAMINS AND MINERALS,UNK,Unclassified,,0,no_atc
+PROTEIN FORMULA WITH VITAMINS AND MINERALS AND LOW IN PHOSPHORUS AND VITAMIN A,UNK,Unclassified,,0,no_atc
+PROTEIN HYDROLYSATE FORMULA WITH MEDIUM CHAIN TRIGLYCERIDES,UNK,Unclassified,,0,no_atc
+PSYLLIUM HUSK POWDER,A,Alimentary tract and metabolism,A:5,5,single
+PYRANTEL,P,Antiparasitic products,P:2,2,single
+PYRIDOSTIGMINE,N,Nervous system,N:8,8,single
+QUETIAPINE,N,Nervous system,N:9,9,single
+QUINAGOLIDE,G,Genito-urinary system and sex hormones,G:3,3,single
+QUININE,P,Antiparasitic products,P:2,2,single
+RABEPRAZOLE,A,Alimentary tract and metabolism,A:9,9,single
+RALOXIFENE,M,Musculo-skeletal system,M:2,2,single
+RAMIPRIL,C,Cardiovascular system,C:27,27,single
+RANIBIZUMAB,S,Sensory organs,S:17,17,single
+RANITIDINE,A,Alimentary tract and metabolism,A:28,28,single
+RASAGILINE,N,Nervous system,N:2,2,single
+REBOXETINE,N,Nervous system,N:2,2,single
+REPOTRECTINIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+RIBAVIRIN,J,Anti-infectives for systemic use,J:21,21,single
+RIBOCICLIB,L,Antineoplastic and immunomodulating agents,L:5,5,single
+RIFAMPICIN,J,Anti-infectives for systemic use,J:9,9,single
+RIFAXIMIN,A,Alimentary tract and metabolism,A:1,1,single
+RILUZOLE,N,Nervous system,N:4,4,single
+RIPRETINIB,L,Antineoplastic and immunomodulating agents,L:1,1,single
+RISANKIZUMAB,L,Antineoplastic and immunomodulating agents,L:6,6,single
+RISEDRONATE,M,Musculo-skeletal system,M:15,15,single
+RISPERIDONE,N,Nervous system,N:37,37,single
+RIVAROXABAN,B,Blood and blood forming organs,B:19,19,single
+RIVASTIGMINE,N,Nervous system,N:23,23,single
+RIZATRIPTAN,N,Nervous system,N:2,2,single
+ROMOSOZUMAB,M,Musculo-skeletal system,M:2,2,single
+ROSUVASTATIN,C,Cardiovascular system,C:20,20,single
+ROTIGOTINE,N,Nervous system,N:8,8,single
+ROXITHROMYCIN,J,Anti-infectives for systemic use,J:8,8,single
+RUXOLITINIB,L,Antineoplastic and immunomodulating agents,L:22,22,single
+SACUBITRIL + VALSARTAN,C,Cardiovascular system,C:6,6,single
+SAFINAMIDE,N,Nervous system,N:4,4,single
+SALBUTAMOL,R,Respiratory system,R:27,27,single
+SALMETEROL,R,Respiratory system,R:4,4,single
+SAPROPTERIN,A,Alimentary tract and metabolism,A:12,12,single
+SAXAGLIPTIN,A,Alimentary tract and metabolism,A:6,6,single
+SECUKINUMAB,L,Antineoplastic and immunomodulating agents,L:32,32,single
+SELPERCATINIB,L,Antineoplastic and immunomodulating agents,L:6,6,single
+SELUMETINIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+SEMAGLUTIDE,A,Alimentary tract and metabolism,A:8,8,single
+SENNOSIDE B,A,Alimentary tract and metabolism,A:1,1,single
+SERTRALINE,N,Nervous system,N:12,12,single
+SEVELAMER,V,Various,V:8,8,single
+SILVER SULFADIAZINE,D,Dermatologicals,D:1,1,single
+SIMVASTATIN,C,Cardiovascular system,C:15,15,single
+SIPONIMOD,L,Antineoplastic and immunomodulating agents,L:4,4,single
+SIROLIMUS,L,Antineoplastic and immunomodulating agents,L:16,16,single
+SITAGLIPTIN,A,Alimentary tract and metabolism,A:9,9,single
+SOFOSBUVIR + VELPATASVIR,J,Anti-infectives for systemic use,J:3,3,single
+SOFOSBUVIR + VELPATASVIR + VOXILAPREVIR,J,Anti-infectives for systemic use,J:3,3,single
+SONIDEGIB,L,Antineoplastic and immunomodulating agents,L:1,1,single
+SORAFENIB,L,Antineoplastic and immunomodulating agents,L:3,3,single
+SOTALOL,C,Cardiovascular system,C:2,2,single
+SOY LECITHIN + TOCOPHEROL + VITAMIN A,S,Sensory organs,S:3,3,single
+SOY PROTEIN AND FAT FORMULA WITH VITAMINS AND MINERALS CARBOHYDRATE FREE,UNK,Unclassified,,0,no_atc
+SPIRONOLACTONE,C,Cardiovascular system,C:5,5,single
+STIRIPENTOL,N,Nervous system,N:4,4,single
+SUCROFERRIC OXYHYDROXIDE,V,Various,V:4,4,single
+SULFAMETHOXAZOLE + TRIMETHOPRIM,J,Anti-infectives for systemic use,J:7,7,single
+SULFASALAZINE,A,Alimentary tract and metabolism,A:6,6,single
+SULTHIAME,N,Nervous system,N:4,4,single
+SUMATRIPTAN,N,Nervous system,N:5,5,single
+SUNITINIB,L,Antineoplastic and immunomodulating agents,L:24,24,single
+TACROLIMUS,L,Antineoplastic and immunomodulating agents,L:36|D:1,37,multi
+TAFAMIDIS,N,Nervous system,N:1,1,single
+TALAZOPARIB,L,Antineoplastic and immunomodulating agents,L:4,4,single
+TAMOXIFEN,L,Antineoplastic and immunomodulating agents,L:7,7,single
+TAMSULOSIN,G,Genito-urinary system and sex hormones,G:3,3,single
+TAPENTADOL,N,Nervous system,N:5,5,single
+TELMISARTAN,C,Cardiovascular system,C:6,6,single
+TEMAZEPAM,N,Nervous system,N:8,8,single
+TEMOZOLOMIDE,L,Antineoplastic and immunomodulating agents,L:18,18,single
+TENECTEPLASE,B,Blood and blood forming organs,B:3,3,single
+TEPOTINIB,L,Antineoplastic and immunomodulating agents,L:1,1,single
+TERBINAFINE,D,Dermatologicals,D:6,6,single
+TERBUTALINE,R,Respiratory system,R:12,12,single
+TERIFLUNOMIDE,L,Antineoplastic and immunomodulating agents,L:1,1,single
+TERIPARATIDE,H,Systemic hormonal preparations,H:7,7,single
+TESTOSTERONE,G,Genito-urinary system and sex hormones,G:13,13,single
+TESTOSTERONE UNDECANOATE,G,Genito-urinary system and sex hormones,G:3,3,single
+TETRABENAZINE,N,Nervous system,N:2,2,single
+TETRACOSACTIDE,H,Systemic hormonal preparations,H:1,1,single
+THEOPHYLLINE,R,Respiratory system,R:15,15,single
+THIAMINE,A,Alimentary tract and metabolism,A:5,5,single
+THYROTROPIN ALFA,H,Systemic hormonal preparations,H:1,1,single
+TIAGABINE,N,Nervous system,N:6,6,single
+TICAGRELOR,B,Blood and blood forming organs,B:2,2,single
+TILDRAKIZUMAB,L,Antineoplastic and immunomodulating agents,L:5,5,single
+TIMOLOL,S,Sensory organs,S:18|C:1,19,multi
+TIMOLOL + TRAVOPROST,S,Sensory organs,S:3,3,single
+TIOGUANINE,L,Antineoplastic and immunomodulating agents,L:1,1,single
+TIOTROPIUM,R,Respiratory system,R:15,15,single
+TIPIRACIL + TRIFLURIDINE,L,Antineoplastic and immunomodulating agents,L:4,4,single
+TOBRAMYCIN,J,Anti-infectives for systemic use,J:9|S:4,13,multi
+TOCILIZUMAB,L,Antineoplastic and immunomodulating agents,L:144,144,single
+TOFACITINIB,L,Antineoplastic and immunomodulating agents,L:18,18,single
+TOLVAPTAN,C,Cardiovascular system,C:10,10,single
+TOPIRAMATE,N,Nervous system,N:28,28,single
+TRAMADOL,N,Nervous system,N:24,24,single
+TRAMETINIB,L,Antineoplastic and immunomodulating agents,L:14,14,single
+TRANDOLAPRIL,C,Cardiovascular system,C:8,8,single
+TRANEXAMIC ACID,B,Blood and blood forming organs,B:1,1,single
+TRANYLCYPROMINE,N,Nervous system,N:2,2,single
+TRASTUZUMAB,L,Antineoplastic and immunomodulating agents,L:40,40,single
+TRAVOPROST,S,Sensory organs,S:3,3,single
+TRIAMCINOLONE,D,Dermatologicals,D:4|H:2|R:1,7,multi
+TRIENTINE,A,Alimentary tract and metabolism,A:1,1,single
+TRIGLYCERIDES LONG CHAIN WITH GLUCOSE POLYMER,UNK,Unclassified,,0,no_atc
+TRIGLYCERIDES MEDIUM CHAIN AND LONG CHAIN WITH GLUCOSE POLYMER,UNK,Unclassified,,0,no_atc
+TRIGLYCERIDES MEDIUM CHAIN FORMULA,V,Various,V:10,10,single
+TRIHEXYPHENIDYL,N,Nervous system,N:3,3,single
+TRIMETHOPRIM,J,Anti-infectives for systemic use,J:4,4,single
+TRIPTORELIN,L,Antineoplastic and immunomodulating agents,L:4,4,single
+UMECLIDINIUM,R,Respiratory system,R:2,2,single
+UMECLIDINIUM + VILANTEROL,R,Respiratory system,R:2,2,single
+UPADACITINIB,L,Antineoplastic and immunomodulating agents,L:26,26,single
+UREA,D,Dermatologicals,D:2,2,single
+URSODEOXYCHOLIC ACID,A,Alimentary tract and metabolism,A:3,3,single
+USTEKINUMAB,L,Antineoplastic and immunomodulating agents,L:44,44,single
+VALACICLOVIR,J,Anti-infectives for systemic use,J:6,6,single
+VALPROATE,N,Nervous system,N:13,13,single
+VALSARTAN,C,Cardiovascular system,C:7,7,single
+VANCOMYCIN,J,Anti-infectives for systemic use,J:26|A:2,28,multi
+VARENICLINE,N,Nervous system,N:6,6,single
+VEDOLIZUMAB,L,Antineoplastic and immunomodulating agents,L:14,14,single
+VEMURAFENIB,L,Antineoplastic and immunomodulating agents,L:2,2,single
+VENETOCLAX,L,Antineoplastic and immunomodulating agents,L:18,18,single
+VENLAFAXINE,N,Nervous system,N:7,7,single
+VERAPAMIL,C,Cardiovascular system,C:13,13,single
+VERICIGUAT,C,Cardiovascular system,C:6,6,single
+VIGABATRIN,N,Nervous system,N:4,4,single
+VILDAGLIPTIN,A,Alimentary tract and metabolism,A:2,2,single
+VINORELBINE,L,Antineoplastic and immunomodulating agents,L:8,8,single
+VISMODEGIB,L,Antineoplastic and immunomodulating agents,L:1,1,single
+VITAMINS MINERALS AND TRACE ELEMENTS WITH CARBOHYDRATE,UNK,Unclassified,,0,no_atc
+VORICONAZOLE,J,Anti-infectives for systemic use,J:6,6,single
+VORINOSTAT,L,Antineoplastic and immunomodulating agents,L:2,2,single
+VOSORITIDE,M,Musculo-skeletal system,M:3,3,single
+WARFARIN,B,Blood and blood forming organs,B:7,7,single
+WHEY PROTEIN FORMULA SUPPLEMENTED WITH AMINO ACIDS LONG CHAIN POLYUNSATURATED FATTY ACIDS VITAMINS AND MINERALS LOW IN PROTEIN AND LACTOSE,UNK,Unclassified,,0,no_atc
+WHEY PROTEIN FORMULA SUPPLEMENTED WITH AMINO ACIDS VITAMINS AND MINERALS AND LOW IN PROTEIN AND LACTOSE,UNK,Unclassified,,0,no_atc
+WITH CARBOHYDRATE,UNK,Unclassified,,0,no_atc
+YELLOW JACKET VENOM,V,Various,V:2,2,single
+ZANUBRUTINIB,L,Antineoplastic and immunomodulating agents,L:4,4,single
+ZIPRASIDONE,N,Nervous system,N:4,4,single
+ZOLEDRONIC ACID,M,Musculo-skeletal system,M:15,15,single
+ZOLMITRIPTAN,N,Nervous system,N:3,3,single
+ZONISAMIDE,N,Nervous system,N:6,6,single
+ZOPICLONE,N,Nervous system,N:2,2,single
+ZUCLOPENTHIXOL DECANOATE,N,Nervous system,N:1,1,single
