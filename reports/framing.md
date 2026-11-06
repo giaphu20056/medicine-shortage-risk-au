@@ -23,3 +23,10 @@ Finalised in T3.4. Inputs: number of episodes, total shortage days, highest impa
 - H2 excludes ongoing shortages (right-censoring), so long-running shortages are under-represented.
 - The PBS supplementary report excludes Section 100 supply, so it covers only part of hospital medicine use.
 - TGA records are per product (ARTG), PBS is per generic ingredient; substitution by other brands can mask a usage drop in H3.
+
+## Risk score (final, T3.4; `sql/04_risk_score.sql`)
+- Scope: 489 ingredients with S94 PUB prescriptions in 202407-202604. The other 559 ingredient keys are not ranked (not measurable, not zero).
+- risk_score = 100 x ((pct_rank(events) + pct_rank(union shortage days) + max_rating/4) / 3) x pct_rank(S94 PUB prescriptions). max_rating: Critical 4, High 3, Medium 2, Low 1.
+- events = resolved + current episodes, counted per ARTG product. Union shortage days = overlapping resolved episodes of the same ingredient merged (gaps-and-islands). The earlier sum of days over-counted 1.4x to 3.3x for the top 5 ingredients because several products are short at the same time.
+- Sensitivity: `alt` (events starting 2024-07..2026-04) Spearman 0.984, top-30 overlap 23/30; `alt2` (max_rating replaced by pct_rank of Critical events) Spearman 0.981, top-30 overlap 23/30. `robust_top30` = in the top 30 under all three.
+- Limits: events counted per product favour multi-brand ingredients; max_rating saturates (1 Critical event = 33 Critical events); ongoing shortages have no end date and are excluded from union days; the three components are weighted equally (arbitrary).
