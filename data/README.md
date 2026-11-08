@@ -38,3 +38,11 @@ Notes:
 - Downloaded DOS files are larger than the sizes stated on the PBS page (16.5 MB and 17.5 MB); cause not verified.
 
 Citation (derivative works): Analysis based on Pharmaceutical Benefits Scheme and Repatriation Pharmaceutical Benefits Scheme Date of Supply Data, Australian Government Department of Health, Disability and Ageing, www.pbs.gov.au
+
+## 3. Re-downloading the raw files
+
+1. Open each source above. For TGA, click the two export buttons. For PBS, download the three URLs.
+2. Save each file into `data/raw/` under the exact name shown in the tables above (rename after download).
+3. Do not edit the raw files. All changes happen in `notebooks/02_clean.ipynb` and are logged in `reports/cleaning_log.md`.
+
+The TGA exports are snapshots. A download made after 2026-11-06 will contain different rows, so counts in the README will not match exactly. PBS may replace the DOS files with a newer quarterly release. Compare file sizes with the tables above to see whether you have the same files.
