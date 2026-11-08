@@ -223,3 +223,6 @@ data/raw/*
 !data/raw/.gitkeep
 *.db
 .DS_Store
+
+data/processed/tga_episodes.csv
+data/processed/out_shortage_duration.csv

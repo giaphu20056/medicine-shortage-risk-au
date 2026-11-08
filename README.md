@@ -276,7 +276,7 @@ medicine-shortage-risk-au/
 ├─ data/
 │  ├─ README.md                 sources, links, download date, terms
 │  ├─ raw/                      original files (not committed)
-│  ├─ processed/                cleaned tables and exported out_* tables (CSV)
+│  ├─ processed/                aggregated and lookup tables (CSV); row-level TGA tables are not committed
 │  └─ project.db                SQLite database (not committed)
 ├─ notebooks/
 │  ├─ 01_profile.ipynb          profiling of the raw files
@@ -365,7 +365,7 @@ Statements marked "not verified" in this README were not checked.
 
 ### Data citations
 
-- Therapeutic Goods Administration, Medicine Shortage Reports Database (active and archived exports), downloaded 6 November 2026: https://www.tga.gov.au/safety/shortages/medicine-shortage-reports-database. Terms of use not yet verified.
+- Therapeutic Goods Administration, Medicine Shortage Reports Database (active and archived exports), downloaded 6 November 2026: https://www.tga.gov.au/safety/shortages/medicine-shortage-reports-database. © Commonwealth of Australia. Terms of use (https://www.tga.gov.au/copyright) read on 8 November 2026; see `data/README.md`.
 - Analysis based on Pharmaceutical Benefits Scheme and Repatriation Pharmaceutical Benefits Scheme Date of Supply Data, Australian Government Department of Health, Disability and Ageing, www.pbs.gov.au. Files downloaded 6 November 2026 from https://pbs.gov.au/statistics/dos-and-dop/dos-and-dop.
 
-The code is MIT-licensed. The data is not redistributed in this repository.
+The code is MIT-licensed. Raw TGA and PBS files are not included, and neither are the two row-level TGA tables (`tga_episodes.csv` and `out_shortage_duration.csv`); the steps in "How to re-run" rebuild them. The repository contains aggregated and lookup tables derived from TGA and PBS data. `data/README.md` records the TGA terms of use as read on 8 November 2026 and what is still not verified.

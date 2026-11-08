@@ -1,6 +1,6 @@
 # Data sources
 
-Raw files live in `data/raw/` and are not committed (see `.gitignore`). Download date for all files: 2026-11-06. Code in this repo is MIT-licensed; the data is not redistributed here.
+Raw files live in `data/raw/` and are not committed (see `.gitignore`). The row-level TGA tables `tga_episodes.csv` and `out_shortage_duration.csv` are rebuilt by the pipeline and are not committed either. `data/processed/` otherwise holds aggregated and lookup tables derived from the TGA and PBS data. Download date for all files: 2026-11-06. Code in this repo is MIT-licensed.
 
 ## 1. TGA Medicine Shortage Reports Database
 
@@ -18,7 +18,7 @@ Caveats:
 - A shortage resolution date is the date stock is available at wholesalers; it may take about a week to reach pharmacy shelves.
 - On 2026-11-06 the TGA export page displayed a notice of a technical issue affecting the archived export: some historical shortages and discontinuations may be missing. The active export is stated as not affected.
 - Both files start with preamble lines (report generation time, title) before the data; handled in cleaning.
-- Terms of use: not yet verified. Check https://www.tga.gov.au/copyright before release (task T4.3).
+- Terms of use: the TGA copyright page (https://www.tga.gov.au/copyright, last updated 10 September 2025, read on 2026-11-08) allows copying of its content in unaltered form for personal use or internal use within an organisation, bars commercial use, and requires written approval to distribute the material or to reproduce its files and information on another site. For that reason the row-level TGA tables are not committed. Not verified: whether the page covers the shortage export on `apps.tga.gov.au`, and whether it covers figures calculated from the data. Source: Therapeutic Goods Administration, Medicine Shortage Reports Database, © Commonwealth of Australia.
 
 ## 2. PBS Date of Supply data
 
@@ -34,7 +34,7 @@ Notes:
 - The two DOS files are the quarterly supplementary reports. They include dispensing pharmacy type for PBS section 85 and RPBS items and exclude section 100 supply.
 - Per PBS data notes: figures are never final, recent months are less complete, and the report should not be used to analyse recent trends.
 - The item drug map gives the generic drug names associated with each item code.
-- Months actually covered by each file and the values of `PHRMCY_TYPE`: to be confirmed in profiling (T2.4).
+- Months used in the analysis: July 2024 to April 2026 (22 months). May and June 2026 are excluded because the PBS notes say the most recent months are less complete. Public hospital supply is the pharmacy type `S94 PUB` in the `PHRMCY_TYPE` column.
 - Downloaded DOS files are larger than the sizes stated on the PBS page (16.5 MB and 17.5 MB); cause not verified.
 
 Citation (derivative works): Analysis based on Pharmaceutical Benefits Scheme and Repatriation Pharmaceutical Benefits Scheme Date of Supply Data, Australian Government Department of Health, Disability and Ageing, www.pbs.gov.au
