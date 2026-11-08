@@ -1,5 +1,7 @@
 # Which Medicines Should a Victorian Public Health Service Buffer Before the Next National Shortage?
 
+> One-page summary for decision makers: [reports/executive_summary.md](reports/executive_summary.md)
+
 ## 1. Business Problem
 **Context.** Shortages of medicines in Australia are reported to the Therapeutic Goods Administration (TGA) by the companies that supply them (sponsors). A public health service cannot hold buffer stock of every medicine, because budget and storage are limited. Procurement has to choose which medicines to buffer before a shortage occurs.
 
