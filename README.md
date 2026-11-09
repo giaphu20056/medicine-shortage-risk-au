@@ -358,7 +358,7 @@ How outputs were checked:
 - **Hand calculation.** The METOPROLOL risk score was recomputed by hand from the percentile columns and matched 92.88 (approximately).
 - **Dashboard.** The six card values were recomputed with SQL on the `out_dash_*` tables and matched.
 - **Sensitivity tests.** Two alternative scoring variants for the risk score; sensitivity variants for H1 to H3 (section 4).
-- **Spearman recomputation.** The correlations and top-30 overlaps in section 4 were recomputed on 8 November 2026 from `out_risk_ranking` in a temporary notebook cell, which is not saved in the repository.
+- **Spearman recomputation.** The correlations and top-30 overlaps in section 4 are recomputed in the "Ranking sensitivity check" cells at the end of `notebooks/03_analysis.ipynb` from `out_risk_ranking`, and matched.
 - **Source pages.** Public hospital pharmacy type (`S94 PUB`) was confirmed in the PBS explanatory notes.
 
 Statements marked "not verified" in this README were not checked.
