@@ -81,6 +81,16 @@ All cleaning decisions are logged with their reasons in `reports/cleaning_log.md
 
 ### TGA shortage data
 
+Four decisions change the results most:
+
+1. **Shared ingredient key.** TGA and PBS names are normalised into one `ingredient_key`; 85.0% of TGA episodes with an ingredient then match the PBS item map.
+2. **Public hospitals only.** Keeping `S94 PUB` leaves 164,292 rows and 3,656,321 prescriptions.
+3. **May and June 2026 excluded.** PBS says recent months are less complete (14,080 rows and 290,710 prescriptions removed).
+4. **Durations only for valid resolved episodes.** 8,295 of 8,298 resolved episodes have a valid duration; H2 depends on it.
+
+<details>
+<summary>All cleaning decisions (TGA and PBS tables)</summary>
+
 | Decision | Reason | Effect |
 |---|---|---|
 | Merge the active and archived exports: skip the free-text preamble, take the header at `ARTG ID`, convert column names to snake_case, read the archived file with `index_col=False` | The exports have different columns and a preamble; archived rows end with an extra comma that would shift the columns | 1,044 + 9,697 = 10,741 rows |
@@ -100,6 +110,8 @@ All cleaning decisions are logged with their reasons in `reports/cleaning_log.md
 | Drop rows without a drug name (items `00000B` and `99999Z`) | `99999Z` is the generic code for unlisted RPBS-only items per the PBS notes; `00000B` is not explained there | 80 rows, 149 prescriptions |
 | Exclude months 202605 and 202606 | PBS states recent months are less complete and the report is not for recent trends | 14,080 rows, 290,710 prescriptions |
 | Drop non-drug preparations (items whose ATC level 5 code starts with Z) | They are not medicines | Only `EXTEMPORANEOUSLY PREPARED` appears: 22 rows, 1,908 prescriptions |
+
+</details>
 
 Result: 3,363,566 public hospital prescriptions over 22 months (202407 to 202604).
 
@@ -241,21 +253,21 @@ The recommendations are ordered by priority (impact on shortage risk against eff
 ### Priority 1. Review the 20 robust ingredients first
 
 - **Action.** For each ingredient with `robust_top30 = 1` in `out_dash_ranking`, record a decision: buffer, do not buffer, or monitor. Record the specific drug form before deciding.
-- **Why.** These 20 stay in the top 30 under all three scoring variants (Insight 4). Some keys merge several forms; METOPROLOL combines succinate and tartrate, and the buffer must be for the form the hospital uses.
+- **Why.** These 20 are stable under all three scoring variants, and some keys merge several drug forms (Insight 4).
 - **Impact / effort.** High / low. The list already exists in `reports/priority_list.csv` and the dashboard.
 - **Metric.** Share of the 20 ingredients with a documented decision.
 
 ### Priority 2. Check the other 10 and the high-Critical ingredients before deciding
 
 - **Action.** For the 10 top-30 ingredients that are not robust, and for any ranked ingredient with many Critical events (for example ADRENALINE with 33, MORPHINE with 14), read the Events, Critical and Days short columns before deciding.
-- **Why.** The maximum rating saturates: one Critical event scores the same as 33 (Insight 4). The score alone cannot separate them.
+- **Why.** The maximum rating gives one Critical event the same score as 33 (Insight 4).
 - **Impact / effort.** Medium / low.
 - **Metric.** Number of these ingredients reviewed, and how many changed decision after the check.
 
 ### Priority 3. Size the buffer from ingredient-level duration and normal demand
 
 - **Action.** For each ingredient chosen for a buffer, take the distribution of its own resolved shortage durations from `out_shortage_duration`, choose the cover (in days) from a high percentile of that distribution, and base the quantity on normal monthly demand.
-- **Why.** Median duration is 45 to 74 days by rating, but 12.7% of Critical and 14.4% of other episodes last more than 180 days, and ongoing shortages are excluded (Insight 2). Prescriptions do not fall when a shortage starts, so demand does not drop to match supply (Insight 3). The percentile and the quantity rule are for procurement to set; this project does not compute them.
+- **Why.** Durations vary widely (Insight 2) and demand does not fall when a shortage starts (Insight 3). The percentile and the quantity rule are for procurement to set; this project does not compute them.
 - **Impact / effort.** High / medium.
 - **Metric.** Cover in days against the ingredient's longest recent shortage; days with stock-out during a TGA-listed shortage.
 
@@ -269,7 +281,7 @@ The recommendations are ordered by priority (impact on shortage risk against eff
 ### Priority 5. Replace the PBS proxy with the service's own dispensing data and refresh the ranking
 
 - **Action.** Re-run the ranking with the health service's own dispensing volumes in place of PBS public hospital prescriptions, and refresh it whenever new PBS and TGA exports are loaded.
-- **Why.** PBS data excludes Section 100 supply. 559 TGA ingredient keys have no PBS public hospital usage and are not ranked because their usage is not measurable. The PBS table in this project has no state field in the grain listed in `reports/framing.md`, so the usage is treated as national, not specific to Victoria (not verified). Own data would cover both gaps.
+- **Why.** PBS data excludes Section 100 supply, and 559 TGA ingredient keys have no measurable public hospital usage. Own data would cover both gaps, and would show whether usage is specific to Victoria (see Scope).
 - **Impact / effort.** High / high. It needs access to internal data.
 - **Metric.** Share of the service's own dispensing volume covered by ranked ingredients; overlap of the top 30 between refreshes.
 
