@@ -2,14 +2,23 @@
 
 > One-page summary for decision makers: [reports/executive_summary.md](reports/executive_summary.md)
 
+## Key findings
+
+- **Priority list.** 489 ingredients with both shortage records and public hospital prescriptions are ranked; METOPROLOL and AMOXICILLIN rank first. 20 of the top 30 stay in the top 30 under all three scoring variants (`robust_top30`).
+- **H1 supported.** The top 10% of ingredients (49) account for 70.3% of public hospital prescriptions; the top 49 by risk score cover only 46.8%.
+- **H2 supported.** Critical shortages resolve faster: median 45 days against 56 (difference -11 days, 95% CI -18 to -6).
+- **H3: no measurable effect.** Prescriptions do not fall in the month a shortage starts (median ratio 0.997, 95% CI 0.985 to 1.004).
+
+![Power BI dashboard overview](dashboard/dashboard_overview.png)
+
 ## 1. Business Problem
 **Context.** Shortages of medicines in Australia are reported to the Therapeutic Goods Administration (TGA) by the companies that supply them (sponsors). A public health service cannot hold buffer stock of every medicine, because budget and storage are limited. Procurement has to choose which medicines to buffer before a shortage occurs.
 
-**Stakeholder.** The pharmacy procurement team of a Victorian public health service.
+**Stakeholder.** The pharmacy procurement team of a Victorian public health service. This is a hypothetical scenario built for this portfolio project, not a request from a real organisation.
 
 **Objective.** Rank active ingredients by risk, defined as shortage exposure (number of shortage episodes and days short) multiplied by public hospital usage (prescriptions), and turn the ranking into a buffer-stock priority list.
 
-**Scope.** Shortages reported to the TGA; public hospital use measured by Pharmaceutical Benefits Scheme (PBS) prescriptions from public hospital pharmacies (`S94 PUB`), July 2024 to April 2026.
+**Scope.** Shortages reported to the TGA; public hospital use measured by Pharmaceutical Benefits Scheme (PBS) prescriptions from public hospital pharmacies (`S94 PUB`), July 2024 to April 2026. Both sources are national: the TGA reports national shortages, and the PBS table in this project has no state field, so usage is not specific to Victoria (not verified). "Victorian" describes the stakeholder setting, not a restriction of the data.
 
 **Key questions.**
 

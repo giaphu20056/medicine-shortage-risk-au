@@ -1,6 +1,6 @@
 # Medicine shortage risk for public hospitals: which ingredients to buffer first
 
-**Situation.** The pharmacy procurement team of a Victorian public health service has to decide which medicines to hold extra stock of before a national shortage occurs, with limited budget and storage space. Shortages are listed by the TGA, and public hospital use of each ingredient is measured from PBS dispensing data (July 2024 to April 2026).
+**Situation.** The pharmacy procurement team of a Victorian public health service has to decide which medicines to hold extra stock of before a national shortage occurs, with limited budget and storage space. Shortages are listed by the TGA, and public hospital use of each ingredient is measured from PBS dispensing data (July 2024 to April 2026).  This is a hypothetical scenario built for this portfolio project, and both data sources are national.
 
 **Complication.** The most used medicines are not the ones most exposed to shortages. The 49 highest-usage ingredients account for 70.3% of public hospital prescriptions, but the 49 highest by risk score account for only 46.8%, so a list sorted by volume alone misses ingredients with heavy shortage exposure. Prescription counts also give no early warning, because they do not fall when a shortage starts, and the TGA list is reported by sponsors with a delay.
 
