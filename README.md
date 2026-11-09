@@ -79,7 +79,7 @@ Prescriptions cover July 2024 to April 2026. May and June 2026 are excluded beca
 ## 3. Data Cleaning
 All cleaning decisions are logged with their reasons in `reports/cleaning_log.md` (15 decisions); counts come from `notebooks/02_clean.ipynb`. Raw files are never edited. The decisions that change the results are below.
 
-### TGA shortage data
+### Key decisions
 
 Four decisions change the results most:
 
@@ -90,6 +90,8 @@ Four decisions change the results most:
 
 <details>
 <summary>All cleaning decisions (TGA and PBS tables)</summary>
+
+**TGA shortage data**
 
 | Decision | Reason | Effect |
 |---|---|---|
@@ -315,6 +317,7 @@ medicine-shortage-risk-au/
 ├─ reports/
 │  ├─ framing.md                problem, hypotheses and rules fixed before testing
 │  ├─ cleaning_log.md           15 cleaning decisions with reasons
+│  ├─ executive_summary.md      one-page summary for decision makers
 │  ├─ priority_list.csv         top 30 ingredients by risk score
 │  └─ figures/
 └─ dashboard/
