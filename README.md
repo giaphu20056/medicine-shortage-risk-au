@@ -4,30 +4,30 @@
 
 ## Key findings
 
-- **Priority list.** 489 ingredients with both shortage records and public hospital prescriptions are ranked; METOPROLOL and AMOXICILLIN rank first. 20 of the top 30 stay in the top 30 under all three scoring variants (`robust_top30`).
-- **H1 supported.** The top 10% of ingredients (49) account for 70.3% of public hospital prescriptions; the top 49 by risk score cover only 46.8%.
-- **H2 supported.** Critical shortages resolve faster: median 45 days against 56 (difference -11 days, 95% CI -18 to -6).
-- **H3: no measurable effect.** Prescriptions do not fall in the month a shortage starts (median ratio 0.997, 95% CI 0.985 to 1.004).
+- **Priority list:** 489 ingredients with both shortage records and public hospital prescriptions are ranked; METOPROLOL and AMOXICILLIN rank first. 20 of the top 30 stay in the top 30 under all three scoring variants (`robust_top30`).
+- **H1 supported:** The top 10% of ingredients (49) account for 70.3% of public hospital prescriptions; the top 49 by risk score cover only 46.8%.
+- **H2 supported:** Critical shortages resolve faster: median 45 days against 56 (difference -11 days, 95% CI -18 to -6).
+- **H3 (no measurable effect):** Prescriptions do not fall in the month a shortage starts (median ratio 0.997, 95% CI 0.985 to 1.004).
 
 ![Power BI dashboard overview](dashboard/dashboard_overview.png)
 
 ## 1. Business Problem
-**Context.** Shortages of medicines in Australia are reported to the Therapeutic Goods Administration (TGA) by the companies that supply them (sponsors). A public health service cannot hold buffer stock of every medicine, because budget and storage are limited. Procurement has to choose which medicines to buffer before a shortage occurs.
+**Context:** Shortages of medicines in Australia are reported to the Therapeutic Goods Administration (TGA) by the companies that supply them (sponsors). A public health service cannot hold buffer stock of every medicine, because budget and storage are limited. Procurement has to choose which medicines to buffer before a shortage occurs.
 
-**Stakeholder.** The pharmacy procurement team of a Victorian public health service. This is a hypothetical scenario built for this portfolio project, not a request from a real organisation.
+**Stakeholder:** The pharmacy procurement team of a Victorian public health service. This is a hypothetical scenario built for this portfolio project, not a request from a real organisation.
 
-**Objective.** Rank active ingredients by risk, defined as shortage exposure (number of shortage episodes and days short) multiplied by public hospital usage (prescriptions), and turn the ranking into a buffer-stock priority list.
+**Objective:** Rank active ingredients by risk, defined as shortage exposure (number of shortage episodes and days short) multiplied by public hospital usage (prescriptions), and turn the ranking into a buffer-stock priority list.
 
 **Scope.** Shortages reported to the TGA; public hospital use measured by Pharmaceutical Benefits Scheme (PBS) prescriptions from public hospital pharmacies (`S94 PUB`), July 2024 to April 2026. Both sources are national: the TGA reports national shortages, and the PBS table in this project has no state field, so usage is not specific to Victoria (not verified). "Victorian" describes the stakeholder setting, not a restriction of the data.
 
-**Key questions.**
+**Key questions:**
 
 1. Which active ingredients combine the highest shortage exposure with the highest public hospital usage?
 2. Is public hospital usage concentrated in a small share of ingredients (H1)?
 3. Are Critical shortages resolved faster than other shortages (H2)?
 4. Do public hospital prescriptions fall in the month a shortage starts (H3)?
 
-**Success metric.** A priority list that procurement can act on and that holds up under alternative scoring: each ingredient in the top 30 is flagged as robust (`robust_top30`) if it stays in the top 30 under all three scoring variants.
+**Success metric:** A priority list that procurement can act on and that holds up under alternative scoring: each ingredient in the top 30 is flagged as robust (`robust_top30`) if it stays in the top 30 under all three scoring variants.
 ## 2. Dataset
 Two public sources are combined: shortage reports from the Therapeutic Goods Administration (TGA) and monthly prescription counts from the Pharmaceutical Benefits Scheme (PBS) Date of Supply data. Both were downloaded on 6 November 2026. Source links and terms of use are in `data/README.md`.
 
@@ -134,11 +134,11 @@ TGA uses salt forms and `~` between ingredients; PBS uses generic names and `+`.
 | Episodes with public hospital usage in the window | not measured | 7,915 (73.8%) |
 | Ingredient keys: in the item map / with usage (of 1,048) | not measured | 698 / 489 |
 
-**Accepted merges.** 8 PBS keys combine more than one drug name (betamethasone, erythromycin, estradiol + norethisterone, ferrous, fluticasone, hydrocortisone, metoprolol, prednisolone) because the analysis is at active-ingredient level. For example, metoprolol merges succinate and tartrate, so the specific form must be checked before buffering.
+**Accepted merges:** 8 PBS keys combine more than one drug name (betamethasone, erythromycin, estradiol + norethisterone, ferrous, fluticasone, hydrocortisone, metoprolol, prednisolone) because the analysis is at active-ingredient level. For example, metoprolol merges succinate and tartrate, so the specific form must be checked before buffering.
 
-**Unmatched remainder is not forced.** 350 keys (1,605 episodes) do not match the item map: 248 keys (1,241 episodes) have no PBS name sharing the first component (reason not verified), and 102 keys (364 episodes) are mostly combinations where PBS lists only one component. A further 1,201 episodes match the map but have no public hospital usage in the window. All of these are treated as "usage not measurable", not zero usage, and are not ranked.
+**Unmatched remainder is not forced:** 350 keys (1,605 episodes) do not match the item map: 248 keys (1,241 episodes) have no PBS name sharing the first component (reason not verified), and 102 keys (364 episodes) are mostly combinations where PBS lists only one component. A further 1,201 episodes match the map but have no public hospital usage in the window. All of these are treated as "usage not measurable", not zero usage, and are not ranked.
 
-**Known gaps in the matching.** A few salt words are not removed (etexilate, pamoate), so dabigatran and olanzapine do not match. Whether normalisation wrongly merged distinct TGA ingredients has not been checked.
+**Known gaps in the matching:** A few salt words are not removed (etexilate, pamoate), so dabigatran and olanzapine do not match. Whether normalisation wrongly merged distinct TGA ingredients has not been checked.
 
 ## 4. Analysis
 
@@ -146,7 +146,7 @@ All figures below are computed from the SQLite tables built in `sql/` and read i
 
 ### Q1. Which ingredients combine the highest shortage exposure with the highest public hospital usage?
 
-**Method.** Each of the 489 ingredients with public hospital prescriptions gets a risk score:
+**Method:** Each of the 489 ingredients with public hospital prescriptions gets a risk score:
 
 `risk_score = 100 x ((pct_rank(events) + pct_rank(union shortage days) + max_rating / 4) / 3) x pct_rank(prescriptions)`
 
@@ -161,7 +161,7 @@ The score is the average of the three shortage components multiplied by the usag
 
 *Reading the dashboard:* the Events, Critical and Days short columns in the table count each ingredient's full TGA history (6,583 events and 430 Critical events across the 489 ranked ingredients). The cards at the top count only episodes that started between July 2024 and April 2026 (1,369 events, 71 Critical), so the two do not add up.
 
-**Result.**
+**Result:**
 
 - METOPROLOL (92.8827) and AMOXICILLIN (92.8771) are first. They share rank 1 only because the rank is computed on the score rounded to 2 decimals. Third is SULFAMETHOXAZOLE + TRIMETHOPRIM (88.33).
 - The top 30 is saved in `reports/priority_list.csv`.
@@ -170,11 +170,11 @@ The score is the average of the three shortage components multiplied by the usag
 
 ### Q2. Is public hospital usage concentrated in a small share of ingredients? (H1)
 
-**Method.** Among the 489 matched ingredients, rank by public hospital prescriptions and take the top 10% (49 ingredients). Rule: H1 is false if these account for 50% or less of prescriptions.
+**Method:** Among the 489 matched ingredients, rank by public hospital prescriptions and take the top 10% (49 ingredients). Rule: H1 is false if these account for 50% or less of prescriptions.
 
 ![H1: cumulative share of prescriptions by ingredient rank](reports/figures/h1_concentration.png)
 
-**Result.** H1 is supported. The top 49 ingredients account for 70.3% of public hospital prescriptions.
+**Result:** H1 is supported. The top 49 ingredients account for 70.3% of public hospital prescriptions.
 
 - Sensitivity: adding ingredients that are in the PBS item map but have no public hospital prescriptions (counted as 0 usage; n = 698, top 10% = 70) gives 78.1%.
 - The three highest-usage ingredients are OXYCODONE (209,387 prescriptions), FERRIC CARBOXYMALTOSE (133,435) and PANTOPRAZOLE (108,426).
@@ -183,11 +183,11 @@ The score is the average of the three shortage components multiplied by the usag
 
 ### Q3. Are Critical shortages resolved faster than other shortages? (H2)
 
-**Method.** 8,295 resolved episodes with a valid duration (end date on or after start date and on or before 2026-11-06). Duration = end date minus start date. Rule: H2 is false if the Critical median is greater than or equal to the median of the other ratings. Uncertainty of the difference is estimated by bootstrap (5,000 resamples, seed 42).
+**Method:** 8,295 resolved episodes with a valid duration (end date on or after start date and on or before 2026-11-06). Duration = end date minus start date. Rule: H2 is false if the Critical median is greater than or equal to the median of the other ratings. Uncertainty of the difference is estimated by bootstrap (5,000 resamples, seed 42).
 
 ![H2: shortage duration by impact rating](reports/figures/h2_duration_by_rating.png)
 
-**Result.** H2 is supported.
+**Result:** H2 is supported.
 
 | Group | Episodes | Median duration (days) |
 |---|---|---|
@@ -203,11 +203,11 @@ The score is the average of the three shortage components multiplied by the usag
 
 ### Q4. Do public hospital prescriptions fall in the month a shortage starts? (H3)
 
-**Method.** For each ingredient and month in which a shortage episode starts, `ratio` = prescriptions in the start month divided by the mean of the 3 preceding months. Rule: H3 is true if the median ratio is below 1. Tests: bootstrap confidence interval and sign test. As a control, the same ratio is computed for every ingredient-month in the same window.
+**Method:** For each ingredient and month in which a shortage episode starts, `ratio` = prescriptions in the start month divided by the mean of the 3 preceding months. Rule: H3 is true if the median ratio is below 1. Tests: bootstrap confidence interval and sign test. As a control, the same ratio is computed for every ingredient-month in the same window.
 
 ![H3: distribution of the usage ratio at shortage start (log2 scale)](reports/figures/h3_ratio_distribution.png)
 
-**Result.** H3 is true by the rule but there is no measurable effect.
+**Result:** H3 is true by the rule but there is no measurable effect.
 
 - Per ingredient-month row (n = 805): median ratio 0.997; 409 rows below 1, 380 above, 16 equal (50.8% below 1). Bootstrap 95% CI 0.985 to 1.004; sign test p = 0.319.
 - Per shortage episode (each row repeated by its number of episodes; n = 1,070): median 0.998, 50.5% below 1.
@@ -224,25 +224,25 @@ The score is the average of the three shortage components multiplied by the usag
 
 ## 5. Insights
 
-### Insight 1. Usage is concentrated, but the highest-usage ingredients are not the highest-risk ones
+### Insight 1: Usage is concentrated, but the highest-usage ingredients are not the highest-risk ones
 
 - **What.** The top 10% of the 489 ingredients (49) account for 70.3% of public hospital prescriptions. The top 49 by risk score account for only 46.8%. The highest-usage ingredient, OXYCODONE (209,387 prescriptions), ranks 13th by risk score.
 - **Why.** The risk score multiplies shortage exposure by usage, so an ingredient with heavy use but few or less severe shortages ranks lower than one with both. The score also uses usage as a percentile rank, which compresses large differences in volume.
 - **So what.** A buffer list built on volume alone and a list built on risk are not the same list. Procurement can cover most prescription volume with a small number of ingredients, but a volume-only list would miss ingredients with heavy shortage exposure. There is no comparison with all PBS ingredients, so this does not show that shortage-affected medicines are more concentrated than medicines in general.
 
-### Insight 2. Critical shortages are not the longest-lasting
+### Insight 2: Critical shortages are not the longest-lasting
 
 - **What.** The median Critical shortage lasted 45 days, against 56 days for all other ratings (difference -11 days, 95% CI -18 to -6). High-rated shortages last longest (median 74 days). The share lasting more than 180 days is similar: 12.7% for Critical and 14.4% for the others.
 - **Why.** Not verified. The data holds no information on how shortages are managed. One possible explanation is that Critical shortages receive more attention from sponsors and regulators, but this was not tested.
 - **So what.** A typical resolved shortage lasts about 1.5 to 2.5 months (medians 45 to 74 days by rating), which is a planning reference for how many weeks of cover a buffer should provide. A severity rating does not predict duration, so buffer size should not be scaled up only because an ingredient is rated Critical. 12.7% of Critical episodes last more than 180 days, and ongoing shortages are excluded, so these durations understate the real range.
 
-### Insight 3. Prescriptions do not fall when a shortage starts
+### Insight 3: Prescriptions do not fall when a shortage starts
 
 - **What.** The median ratio of prescriptions in the start month to the previous three months is 0.997 (95% CI 0.985 to 1.004). Months without a shortage start give 0.995. The data show no drop in public hospital prescriptions.
 - **Why.** Not verified. Possible explanations: hospitals dispense another brand of the same ingredient (PBS counts per ingredient), hospitals use existing stock, sponsors report a shortage after it has begun, or the effect is spread over a longer period than one month. The data cannot separate these.
 - **So what.** Monthly prescription counts cannot be used as an early warning that a shortage has started. At ingredient level there is no sign that demand falls to match supply, so a buffer should be sized to cover normal demand, not reduced demand.
 
-### Insight 4. The ranking is a screening tool: 20 of the top 30 are stable, and the rating component cannot separate severity
+### Insight 4: The ranking is a screening tool: 20 of the top 30 are stable, and the rating component cannot separate severity
 
 - **What.** 20 of the top 30 ingredients stay in the top 30 under all three scoring variants; the other 10 move in or out. AMOXICILLIN has 1 Critical event and ADRENALINE has 33, and both receive the same maximum rating of Critical.
 - **Why.** The maximum rating saturates: one Critical event scores the same as many. Events are also counted per ARTG product, which favours ingredients sold under many brands. The three score components have equal weights, which is an arbitrary choice.
@@ -252,40 +252,40 @@ The score is the average of the three shortage components multiplied by the usag
 
 The recommendations are ordered by priority (impact on shortage risk against effort to carry out). Impact and effort are judgements, not measured values. The ranking is a screening tool, so each action starts from the list and ends with a human check.
 
-### Priority 1. Review the 20 robust ingredients first
+### Priority 1: Review the 20 robust ingredients first
 
-- **Action.** For each ingredient with `robust_top30 = 1` in `out_dash_ranking`, record a decision: buffer, do not buffer, or monitor. Record the specific drug form before deciding.
-- **Why.** These 20 are stable under all three scoring variants, and some keys merge several drug forms (Insight 4).
-- **Impact / effort.** High / low. The list already exists in `reports/priority_list.csv` and the dashboard.
-- **Metric.** Share of the 20 ingredients with a documented decision.
+- **Action:** For each ingredient with `robust_top30 = 1` in `out_dash_ranking`, record a decision: buffer, do not buffer, or monitor. Record the specific drug form before deciding.
+- **Why:** These 20 are stable under all three scoring variants, and some keys merge several drug forms (Insight 4).
+- **Impact / effort:** High / low. The list already exists in `reports/priority_list.csv` and the dashboard.
+- **Metric:** Share of the 20 ingredients with a documented decision.
 
-### Priority 2. Check the other 10 and the high-Critical ingredients before deciding
+### Priority 2: Check the other 10 and the high-Critical ingredients before deciding
 
-- **Action.** For the 10 top-30 ingredients that are not robust, and for any ranked ingredient with many Critical events (for example ADRENALINE with 33, MORPHINE with 14), read the Events, Critical and Days short columns before deciding.
-- **Why.** The maximum rating gives one Critical event the same score as 33 (Insight 4).
-- **Impact / effort.** Medium / low.
-- **Metric.** Number of these ingredients reviewed, and how many changed decision after the check.
+- **Action:** For the 10 top-30 ingredients that are not robust, and for any ranked ingredient with many Critical events (for example ADRENALINE with 33, MORPHINE with 14), read the Events, Critical and Days short columns before deciding.
+- **Why:** The maximum rating gives one Critical event the same score as 33 (Insight 4).
+- **Impact / effort:** Medium / low.
+- **Metric:** Number of these ingredients reviewed, and how many changed decision after the check.
 
-### Priority 3. Size the buffer from ingredient-level duration and normal demand
+### Priority 3: Size the buffer from ingredient-level duration and normal demand
 
-- **Action.** For each ingredient chosen for a buffer, take the distribution of its own resolved shortage durations from `out_shortage_duration`, choose the cover (in days) from a high percentile of that distribution, and base the quantity on normal monthly demand.
-- **Why.** Durations vary widely (Insight 2) and demand does not fall when a shortage starts (Insight 3). The percentile and the quantity rule are for procurement to set; this project does not compute them.
-- **Impact / effort.** High / medium.
-- **Metric.** Cover in days against the ingredient's longest recent shortage; days with stock-out during a TGA-listed shortage.
+- **Action:** For each ingredient chosen for a buffer, take the distribution of its own resolved shortage durations from `out_shortage_duration`, choose the cover (in days) from a high percentile of that distribution, and base the quantity on normal monthly demand.
+- **Why:** Durations vary widely (Insight 2) and demand does not fall when a shortage starts (Insight 3). The percentile and the quantity rule are for procurement to set; this project does not compute them.
+- **Impact / effort:** High / medium.
+- **Metric:** Cover in days against the ingredient's longest recent shortage; days with stock-out during a TGA-listed shortage.
 
-### Priority 4. Watch the TGA shortage list for ranked ingredients, not prescription counts
+### Priority 4: Watch the TGA shortage list for ranked ingredients, not prescription counts
 
-- **Action.** Check the TGA shortage list for the ranked ingredients on a fixed schedule and trigger a procurement review when one is listed as current or anticipated.
-- **Why.** Monthly prescription counts showed no change at shortage start (Insight 3), so they cannot serve as an early warning.
-- **Impact / effort.** Medium / low.
-- **Metric.** Time from a TGA listing to a documented procurement action. Sponsors report with delay, so this measures the response, not the shortage itself.
+- **Action:** Check the TGA shortage list for the ranked ingredients on a fixed schedule and trigger a procurement review when one is listed as current or anticipated.
+- **Why:** Monthly prescription counts showed no change at shortage start (Insight 3), so they cannot serve as an early warning.
+- **Impact / effort:** Medium / low.
+- **Metric:** Time from a TGA listing to a documented procurement action. Sponsors report with delay, so this measures the response, not the shortage itself.
 
-### Priority 5. Replace the PBS proxy with the service's own dispensing data and refresh the ranking
+### Priority 5: Replace the PBS proxy with the service's own dispensing data and refresh the ranking
 
-- **Action.** Re-run the ranking with the health service's own dispensing volumes in place of PBS public hospital prescriptions, and refresh it whenever new PBS and TGA exports are loaded.
-- **Why.** PBS data excludes Section 100 supply, and 559 TGA ingredient keys have no measurable public hospital usage. Own data would cover both gaps, and would show whether usage is specific to Victoria (see Scope).
-- **Impact / effort.** High / high. It needs access to internal data.
-- **Metric.** Share of the service's own dispensing volume covered by ranked ingredients; overlap of the top 30 between refreshes.
+- **Action:** Re-run the ranking with the health service's own dispensing volumes in place of PBS public hospital prescriptions, and refresh it whenever new PBS and TGA exports are loaded.
+- **Why:** PBS data excludes Section 100 supply, and 559 TGA ingredient keys have no measurable public hospital usage. Own data would cover both gaps, and would show whether usage is specific to Victoria (see Scope).
+- **Impact / effort:** High / high. It needs access to internal data.
+- **Metric:** Share of the service's own dispensing volume covered by ranked ingredients; overlap of the top 30 between refreshes.
 
 ## Appendix
 
