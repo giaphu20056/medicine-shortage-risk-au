@@ -369,9 +369,7 @@ The numbers in this README come from files downloaded on 6 November 2026. A late
 Claude was used as an AI-assisted development tool for drafting and refining 
 SQL queries, Python notebook code, and initial README wording.
 
-The project design, data-cleaning rules, analytical hypotheses, query logic, 
-validation checks, interpretation of results, and final dashboard decisions 
-were developed and reviewed by the author. All SQL queries and Python cells 
+All SQL queries and Python cells 
 were executed and checked in VS Code, DB Browser for SQLite, and Power BI. 
 Outputs were validated against the source data before inclusion in this repository.
 
